@@ -1,0 +1,4 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){// Disable interstitial in IE
+if(isIE())return;if(document.querySelector("html").classList.contains("is-desktop")){var interstitial=document.getElementById("interstitial");var closeButton=document.querySelector("#interstitial .js-perfundo-close");var body=document.querySelector("body");var downloadButtons=document.querySelectorAll(".download");// display interstitial on download
+forEach(downloadButtons,function(el){el.addEventListener("click",function(event){interstitial.classList.add("is-active");body.classList.add("overflow-hidden");setTimeout(function(){interstitial.classList.add("opacity-100");interstitial.classList.remove("opacity-0")},2000)})});//resets interstitial to original state on close
+closeButton.addEventListener("click",function(){interstitial.classList.add("opacity-0");interstitial.classList.remove("opacity-100");body.classList.remove("overflow-hidden")})}});
