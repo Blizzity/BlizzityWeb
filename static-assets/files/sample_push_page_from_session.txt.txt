@@ -1,0 +1,4226 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2019-06-04T01:52:04.761Z",
+        "id": "page_2",
+        "title": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+        "pageTimings": {
+          "onContentLoad": 123.39799999608658,
+          "onLoad": 372.9400000011083
+        }
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:39.918Z",
+        "id": "page_1",
+        "title": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+        "pageTimings": {
+          "onContentLoad": 187.40200001047924,
+          "onLoad": 923.2380000030389
+        }
+      }
+    ],
+    "entries": [
+      {
+        "startedDateTime": "2019-06-04T01:52:04.759Z",
+        "time": 22.205000001122244,
+        "request": {
+          "method": "GET",
+          "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "pagead2.googlesyndication.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "cache-control",
+              "value": "max-age=0"
+            },
+            {
+              "name": "upgrade-insecure-requests",
+              "value": "1"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+            },
+            {
+              "name": "x-client-data",
+              "value": "CIi2yQEIprbJAQjBtskBCKmdygEIqKPKAQixp8oBCOKoygEI8anKAQifrsoBGM+qygE="
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "if-none-match",
+              "value": "15714087069842583550"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 304,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "status",
+              "value": "304"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:02:43 GMT"
+            },
+            {
+              "name": "expires",
+              "value": "Wed, 05 Jun 2019 01:02:43 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "15714087069842583550"
+            },
+            {
+              "name": "age",
+              "value": "2961"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1034,
+            "mimeType": "text/html",
+            "text": "<!DOCTYPE html>\n<html>\n<head>\n  <title></title>\n  <script type=\"text/javascript\">(function(){var d=null,e=null;function f(){var a=\"\";g(function(b){a+=String.fromCharCode(b)});return a}function g(a){function b(a){for(;k<l.length;){var b=l.charAt(k++),c=e[b];if(null!=c)return c;if(!/^[\\s\\xa0]*$/.test(b))throw Error(\"Unknown base64 encoding at char: \"+b);}return a}var l=m[q];r();for(var k=0;;){var n=b(-1),p=b(0),c=b(64),h=b(64);if(64===h&&-1===n)break;a(n<<2|p>>4);64!=c&&(a(p<<4&240|c>>2),64!=h&&a(c<<6&192|h))}}\nfunction r(){if(!d){d={};e={};for(var a=0;65>a;a++)d[a]=\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=\".charAt(a),e[d[a]]=a,62<=a&&(e[\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.\".charAt(a)]=a)}};for(var m=window.location.hash.substring(1).split(\",\"),q=0;q<m.length;q++){var t=f(),u=window;u.google_image_requests||(u.google_image_requests=[]);var v=u.document.createElement(\"img\");v.src=t;u.google_image_requests.push(v)};}).call(this);</script>\n</head>\n<body></body>\n</html>\n"
+          },
+          "redirectURL": "",
+          "headersSize": 258,
+          "bodySize": 0,
+          "_transferSize": 81
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.8489999963194133,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.11999999999999988,
+          "wait": 18.15000000095088,
+          "receive": 1.0860000038519502,
+          "_blocked_queueing": 1.7729999963194132
+        },
+        "serverIPAddress": "[2607:f8b0:4007:804::2002]",
+        "_initiator": {
+          "type": "other"
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "document",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:39.917Z",
+        "time": 113.33700001001078,
+        "request": {
+          "method": "GET",
+          "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "pagead2.googlesyndication.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "cache-control",
+              "value": "max-age=0"
+            },
+            {
+              "name": "upgrade-insecure-requests",
+              "value": "1"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+            },
+            {
+              "name": "x-client-data",
+              "value": "CIi2yQEIprbJAQjBtskBCKmdygEIqKPKAQixp8oBCOKoygEI8anKAQifrsoBGM+qygE="
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "if-none-match",
+              "value": "15714087069842583550"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 304,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "status",
+              "value": "304"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:02:43 GMT"
+            },
+            {
+              "name": "expires",
+              "value": "Wed, 05 Jun 2019 01:02:43 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "15714087069842583550"
+            },
+            {
+              "name": "age",
+              "value": "2876"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1034,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "",
+          "headersSize": 258,
+          "bodySize": 0,
+          "_transferSize": 174
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.9979999994868414,
+          "dns": 25.038,
+          "ssl": 59.248000000000005,
+          "connect": 84.427,
+          "send": 0,
+          "wait": 0.4640000026915203,
+          "receive": 0.41000000783242285,
+          "_blocked_queueing": 1.3739999994868413
+        },
+        "serverIPAddress": "[2607:f8b0:4007:804::2002]",
+        "_initiator": {
+          "type": "other"
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "document",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.096Z",
+        "time": 86.94800001103431,
+        "request": {
+          "method": "GET",
+          "url": "https://d.agkn.com/pixel/2175/?google_gid=CAESEP-S3Zs5f0_kq11XTCZP_mE&google_cver=1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_gid",
+              "value": "CAESEP-S3Zs5f0_kq11XTCZP_mE"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:39 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache-Coyote/1.1"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"NOI DSP COR CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT\""
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Content-Length",
+              "value": "43"
+            },
+            {
+              "name": "Expires",
+              "value": "Sat, 01 Jan 2000 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 43,
+            "mimeType": "image/gif",
+            "text": "R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 553
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.469000012946315,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.05700000000000005,
+          "wait": 84.80299999953714,
+          "receive": 0.6189999985508621,
+          "_blocked_queueing": 0.7260000129463151
+        },
+        "serverIPAddress": "52.25.128.175",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "connection": "337157",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.096Z",
+        "time": 67.90499998896848,
+        "request": {
+          "method": "GET",
+          "url": "https://id.rlcdn.com/466606.gif?cparams=google_push%3DAHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og&google_gid=CAESEPpf2T4-2AsAR_4rer3RfNs&google_cver=1",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "cparams",
+              "value": "google_push%3DAHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEPpf2T4-2AsAR_4rer3RfNs"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 307,
+          "statusText": "Temporary Redirect",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 google"
+            },
+            {
+              "name": "P3p",
+              "value": "CP=\"NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA\""
+            },
+            {
+              "name": "Location",
+              "value": "https://cm.g.doubleclick.net/pixel?google_nid=liveramp&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og&google_hm=WGMzMDcwTDVPT2Nxdl9JREdNV2UyWURSOUZHMVlsNUU1VEo3cnpmRy1PaVJZVGtCcw==&google_cm"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store"
+            },
+            {
+              "name": "Timing-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Alt-Svc",
+              "value": "clear"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown"
+          },
+          "redirectURL": "https://cm.g.doubleclick.net/pixel?google_nid=liveramp&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og&google_hm=WGMzMDcwTDVPT2Nxdl9JREdNV2UyWURSOUZHMVlsNUU1VEo3cnpmRy1PaVJZVGtCcw==&google_cm",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 722
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.1259999892385677,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.03699999999999992,
+          "wait": 65.72600000502355,
+          "receive": 1.0159999947063625,
+          "_blocked_queueing": 0.5699999892385677
+        },
+        "serverIPAddress": "34.95.92.78",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "335135",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.096Z",
+        "time": 75.75899999937974,
+        "request": {
+          "method": "GET",
+          "url": "https://us-u.openx.net/w/1.0/pd?ph=bbb82fae-1d27-4d90-bb10-e24164ecd7bc&google_gid=CAESEPIJ9jHcY2j4jK3-DPmfar4&google_cver=1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ph",
+              "value": "bbb82fae-1d27-4d90-bb10-e24164ecd7bc"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEPIJ9jHcY2j4jK3-DPmfar4"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "Moved Temporarily",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Location",
+              "value": "https://us-u.openx.net/w/1.0/cm?id=e508c905-ddce-4732-92a4-0b0f5b72a28f&r=https%3A%2F%2Fid.rlcdn.com%2F464246.gif%3Fpartner_uid%3D"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "OXGW/16.146.0"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"CUR ADM OUR NOR STA NID\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "https://us-u.openx.net/w/1.0/cm?id=e508c905-ddce-4732-92a4-0b0f5b72a28f&r=https%3A%2F%2Fid.rlcdn.com%2F464246.gif%3Fpartner_uid%3D",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 649
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.9070000032261014,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.034999999999999976,
+          "wait": 72.75399999281206,
+          "receive": 1.0630000033415854,
+          "_blocked_queueing": 1.5140000032261014
+        },
+        "serverIPAddress": "173.241.244.143",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "335142",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.097Z",
+        "time": 39.5730000018375,
+        "request": {
+          "method": "GET",
+          "url": "https://image6.pubmatic.com/AdServer/UCookieSetPug?oid=1&rd=https%3A%2F%2Fcm.g.doubleclick.net%2Fpixel%3Fgoogle_nid%3Dpmeb%26google_sc%3D1%26google_hm%3D%23%23B64_16B_PM_UID%26google_redir%3Dhttps%25253A%25252F%25252Fimage8.pubmatic.com%25252FAdServer%25252FImgSync%25253Fsec%25253D1%252526p%25253D156578%252526mpc%25253D4%252526fp%25253D1%252526pu%25253Dhttps%2525253A%2525252F%2525252Fimage4.pubmatic.com%2525252FAdServer%2525252FSPug%2525253Fp%2525253D156578%25252526sc%2525253D1&google_gid=CAESEB9H3qdV26kxEiz-BJ_TY-M&google_cver=1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "oid",
+              "value": "1"
+            },
+            {
+              "name": "rd",
+              "value": "https%3A%2F%2Fcm.g.doubleclick.net%2Fpixel%3Fgoogle_nid%3Dpmeb%26google_sc%3D1%26google_hm%3D%23%23B64_16B_PM_UID%26google_redir%3Dhttps%25253A%25252F%25252Fimage8.pubmatic.com%25252FAdServer%25252FImgSync%25253Fsec%25253D1%252526p%25253D156578%252526mpc%25253D4%252526fp%25253D1%252526pu%25253Dhttps%2525253A%2525252F%2525252Fimage4.pubmatic.com%2525252FAdServer%2525252FSPug%2525253Fp%2525253D156578%25252526sc%2525253D1"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEB9H3qdV26kxEiz-BJ_TY-M"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "Found",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Location",
+              "value": "https://cm.g.doubleclick.net/pixel?google_nid=pmeb&google_sc=1&google_hm=HKZfeqzFTvu10nThtdJPfw%3D%3D&google_redir=https%3A%2F%2Fimage8.pubmatic.com%2FAdServer%2FImgSync%3Fsec%3D1%26p%3D156578%26mpc%3D4%26fp%3D1%26pu%3Dhttps%253A%252F%252Fimage4.pubmatic.com%252FAdServer%252FSPug%253Fp%253D156578%2526sc%253D1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=UTF-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "408"
+            },
+            {
+              "name": "P3p",
+              "value": "CP=\"NOI DSP COR LAW CUR ADMo DEVo TAIo PSAo PSDo IVAo IVDo HISo OTPo OUR SAMo BUS UNI COM NAV INT DEM CNT STA PRE LOC\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "https://cm.g.doubleclick.net/pixel?google_nid=pmeb&google_sc=1&google_hm=HKZfeqzFTvu10nThtdJPfw%3D%3D&google_redir=https%3A%2F%2Fimage8.pubmatic.com%2FAdServer%2FImgSync%3Fsec%3D1%26p%3D156578%26mpc%3D4%26fp%3D1%26pu%3Dhttps%253A%252F%252Fimage4.pubmatic.com%252FAdServer%252FSPug%253Fp%253D156578%2526sc%253D1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 626
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.1929999932777138,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.03899999999999998,
+          "wait": 36.57000000220724,
+          "receive": 0.7710000063525513,
+          "_blocked_queueing": 1.8069999932777137
+        },
+        "serverIPAddress": "104.36.113.23",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "335169",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.097Z",
+        "time": 155.04199999444,
+        "request": {
+          "method": "GET",
+          "url": "https://token.rubiconproject.com/token?pid=2249&pt=n&google_gid=CAESEE1DyZ245WggYaQZEWpQWI8&google_cver=1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "pid",
+              "value": "2249"
+            },
+            {
+              "name": "pt",
+              "value": "n"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEE1DyZ245WggYaQZEWpQWI8"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "Found",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Location",
+              "value": "https://cm.g.doubleclick.net/pixel?google_nid=rubicon&google_cm&google_sc"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache,no-store,must-revalidate"
+            },
+            {
+              "name": "P3P",
+              "value": "P=\"NOI CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT\""
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "X-RPHost",
+              "value": "ec5d4601d866c993cb911ece08796dc5"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown"
+          },
+          "redirectURL": "https://cm.g.doubleclick.net/pixel?google_nid=rubicon&google_cm&google_sc",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 312
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.647000001630746,
+          "dns": 0.01200000000000001,
+          "ssl": 116.438,
+          "connect": 116.677,
+          "send": 0.1419999999999959,
+          "wait": 34.68400000048801,
+          "receive": 0.8799999923212454,
+          "_blocked_queueing": 2.326000001630746
+        },
+        "serverIPAddress": "8.39.36.172",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "337210",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.097Z",
+        "time": 46.38899999554269,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel/attr?d=AHNF13ID7tY7uFNhPcTpJ-WXQkUKdhoIBk5GZl7ylS8UevkRYDpo4M8Oky9m_5I",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "d",
+              "value": "AHNF13ID7tY7uFNhPcTpJ-WXQkUKdhoIBk5GZl7ylS8UevkRYDpo4M8Oky9m_5I"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "status",
+              "value": "204"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html",
+            "text": "",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 83
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 3.4669999897023662,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.16099999999999998,
+          "wait": 42.54700000615325,
+          "receive": 0.21399999968707561,
+          "_blocked_queueing": 3.0429999897023663
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [],
+            "parent": {
+              "description": "Image",
+              "callFrames": [
+                {
+                  "functionName": "",
+                  "scriptId": "2377",
+                  "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                  "lineNumber": 5,
+                  "columnNumber": 429
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "2377",
+                  "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                  "lineNumber": 5,
+                  "columnNumber": 468
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.136Z",
+        "time": 47.45600000023842,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel?google_nid=pmeb&google_sc=1&google_hm=HKZfeqzFTvu10nThtdJPfw%3D%3D&google_redir=https%3A%2F%2Fimage8.pubmatic.com%2FAdServer%2FImgSync%3Fsec%3D1%26p%3D156578%26mpc%3D4%26fp%3D1%26pu%3Dhttps%253A%252F%252Fimage4.pubmatic.com%252FAdServer%252FSPug%253Fp%253D156578%2526sc%253D1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_nid",
+              "value": "pmeb"
+            },
+            {
+              "name": "google_sc",
+              "value": "1"
+            },
+            {
+              "name": "google_hm",
+              "value": "HKZfeqzFTvu10nThtdJPfw%3D%3D"
+            },
+            {
+              "name": "google_redir",
+              "value": "https%3A%2F%2Fimage8.pubmatic.com%2FAdServer%2FImgSync%3Fsec%3D1%26p%3D156578%26mpc%3D4%26fp%3D1%26pu%3Dhttps%253A%252F%252Fimage4.pubmatic.com%252FAdServer%252FSPug%253Fp%253D156578%2526sc%253D1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "content-type",
+              "value": "image/png"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "170"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 170,
+            "mimeType": "image/png",
+            "text": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1wUdDQ0tUdU3bgAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAADUlEQVQI12OoaXnlAAAFlQIrA6Le9wAAAABJRU5ErkJgggo=",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 255
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.5990000001974404,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.09600000000000003,
+          "wait": 46.43599999915622,
+          "receive": 0.32500000088475645,
+          "_blocked_queueing": 0.23700000019744039
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.164Z",
+        "time": 42.92900000291411,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel?google_nid=liveramp&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og&google_hm=WGMzMDcwTDVPT2Nxdl9JREdNV2UyWURSOUZHMVlsNUU1VEo3cnpmRy1PaVJZVGtCcw==&google_cm",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_nid",
+              "value": "liveramp"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            },
+            {
+              "name": "google_hm",
+              "value": "WGMzMDcwTDVPT2Nxdl9JREdNV2UyWURSOUZHMVlsNUU1VEo3cnpmRy1PaVJZVGtCcw=="
+            },
+            {
+              "name": "google_cm",
+              "value": ""
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "content-type",
+              "value": "image/png"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "170"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 170,
+            "mimeType": "image/png",
+            "text": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1wUdDQ0tUdU3bgAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAADUlEQVQI12OoaXnlAAAFlQIrA6Le9wAAAABJRU5ErkJgggo=",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 189
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.7090000112075359,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.119,
+          "wait": 41.76200000063423,
+          "receive": 0.3389999910723418,
+          "_blocked_queueing": 0.33400001120753586
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.172Z",
+        "time": 72.86100000783335,
+        "request": {
+          "method": "GET",
+          "url": "https://us-u.openx.net/w/1.0/cm?id=e508c905-ddce-4732-92a4-0b0f5b72a28f&r=https%3A%2F%2Fid.rlcdn.com%2F464246.gif%3Fpartner_uid%3D",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "id",
+              "value": "e508c905-ddce-4732-92a4-0b0f5b72a28f"
+            },
+            {
+              "name": "r",
+              "value": "https%3A%2F%2Fid.rlcdn.com%2F464246.gif%3Fpartner_uid%3D"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "Moved Temporarily",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Location",
+              "value": "https://id.rlcdn.com/464246.gif?partner_uid=76da0958-2f68-06f2-1df6-a586cb5aea7c"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "OXGW/16.146.0"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"CUR ADM OUR NOR STA NID\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "https://id.rlcdn.com/464246.gif?partner_uid=76da0958-2f68-06f2-1df6-a586cb5aea7c",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 437
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.9909999960912392,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.03200000000000003,
+          "wait": 69.89599999843165,
+          "receive": 0.9420000133104622,
+          "_blocked_queueing": 1.2779999960912392
+        },
+        "serverIPAddress": "173.241.244.143",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "335142",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.245Z",
+        "time": 59.1289999865694,
+        "request": {
+          "method": "GET",
+          "url": "https://id.rlcdn.com/464246.gif?partner_uid=76da0958-2f68-06f2-1df6-a586cb5aea7c",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "partner_uid",
+              "value": "76da0958-2f68-06f2-1df6-a586cb5aea7c"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 307,
+          "statusText": "Temporary Redirect",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 google"
+            },
+            {
+              "name": "P3p",
+              "value": "CP=\"NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA\""
+            },
+            {
+              "name": "Location",
+              "value": "https://pippio.com/api/sync?pid=5324&it=1&iv=f03a97c23c64e83b6f1e1d0f1801004cebf16ed6d83191e226d0c35e7a53a6ee791426b5417dce21&_=2"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store"
+            },
+            {
+              "name": "Timing-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Alt-Svc",
+              "value": "clear"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown"
+          },
+          "redirectURL": "https://pippio.com/api/sync?pid=5324&it=1&iv=f03a97c23c64e83b6f1e1d0f1801004cebf16ed6d83191e226d0c35e7a53a6ee791426b5417dce21&_=2",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 657
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.629999990218319,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.05099999999999999,
+          "wait": 57.29100000484288,
+          "receive": 1.1569999915082008,
+          "_blocked_queueing": 0.271999990218319
+        },
+        "serverIPAddress": "34.95.92.78",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "335135",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.252Z",
+        "time": 44.65300000447314,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel?google_nid=rubicon&google_cm&google_sc",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_nid",
+              "value": "rubicon"
+            },
+            {
+              "name": "google_cm",
+              "value": ""
+            },
+            {
+              "name": "google_sc",
+              "value": ""
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "location",
+              "value": "https://pixel.rubiconproject.com/tap.php?v=7751&nid=2249&expires=30&put=CAESEOv-bY69qxGtsg8T9aZHQ88&google_cver=1"
+            },
+            {
+              "name": "p3p",
+              "value": "policyref=\"https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\""
+            },
+            {
+              "name": "status",
+              "value": "302"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html; charset=UTF-8"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "326"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "https://pixel.rubiconproject.com/tap.php?v=7751&nid=2249&expires=30&put=CAESEOv-bY69qxGtsg8T9aZHQ88&google_cver=1",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 270
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.7269999985201284,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.09800000000000003,
+          "wait": 42.56400000004936,
+          "receive": 1.2640000059036538,
+          "_blocked_queueing": 0.36099999852012843
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.296Z",
+        "time": 82.24999999220017,
+        "request": {
+          "method": "GET",
+          "url": "https://pixel.rubiconproject.com/tap.php?v=7751&nid=2249&expires=30&put=CAESEOv-bY69qxGtsg8T9aZHQ88&google_cver=1",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "v",
+              "value": "7751"
+            },
+            {
+              "name": "nid",
+              "value": "2249"
+            },
+            {
+              "name": "expires",
+              "value": "30"
+            },
+            {
+              "name": "put",
+              "value": "CAESEOv-bY69qxGtsg8T9aZHQ88"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:39 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Rubicon Project"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"NOI CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT\""
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Content-Length",
+              "value": "42"
+            },
+            {
+              "name": "X-RPHost",
+              "value": "nzXI0GIRlzpuFfVLlmSdAA"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 42,
+            "mimeType": "image/gif",
+            "text": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 1031
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.9079999912492931,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.04200000000000004,
+          "wait": 80.16900000369269,
+          "receive": 1.1309999972581863,
+          "_blocked_queueing": 0.4039999912492931
+        },
+        "serverIPAddress": "8.39.36.142",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "connection": "337183",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.304Z",
+        "time": 188.8960000075968,
+        "request": {
+          "method": "GET",
+          "url": "https://pippio.com/api/sync?pid=5324&it=1&iv=f03a97c23c64e83b6f1e1d0f1801004cebf16ed6d83191e226d0c35e7a53a6ee791426b5417dce21&_=2",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "pid",
+              "value": "5324"
+            },
+            {
+              "name": "it",
+              "value": "1"
+            },
+            {
+              "name": "iv",
+              "value": "f03a97c23c64e83b6f1e1d0f1801004cebf16ed6d83191e226d0c35e7a53a6ee791426b5417dce21"
+            },
+            {
+              "name": "_",
+              "value": "2"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 307,
+          "statusText": "Temporary Redirect",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 google"
+            },
+            {
+              "name": "P3p",
+              "value": "CP=\"NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA\""
+            },
+            {
+              "name": "Location",
+              "value": "https://cm.g.doubleclick.net/pixel?google_nid=pippio_dmp&google_cm&google_no_sc&m=CMwpElsKVwgBEJInGlBmMDNhOTdjMjNjNjRlODNiNmYxZTFkMGYxODAxMDA0Y2ViZjE2ZWQ2ZDgzMTkxZTIyNmQwYzM1ZTdhNTNhNmVlNzkxNDI2YjU0MTdkY2UyMRAAGgwI8JzX5wUSBAgCEABCAEoA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store"
+            },
+            {
+              "name": "Timing-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Alt-Svc",
+              "value": "clear"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown"
+          },
+          "redirectURL": "https://cm.g.doubleclick.net/pixel?google_nid=pippio_dmp&google_cm&google_no_sc&m=CMwpElsKVwgBEJInGlBmMDNhOTdjMjNjNjRlODNiNmYxZTFkMGYxODAxMDA0Y2ViZjE2ZWQ2ZDgzMTkxZTIyNmQwYzM1ZTdhNTNhNmVlNzkxNDI2YjU0MTdkY2UyMRAAGgwI8JzX5wUSBAgCEABCAEoA",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 879
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.7830000012181699,
+          "dns": 18.589,
+          "ssl": 88.76,
+          "connect": 107.561,
+          "send": 0.09899999999998954,
+          "wait": 60.85399999915157,
+          "receive": 1.0100000072270632,
+          "_blocked_queueing": 0.2830000012181699
+        },
+        "serverIPAddress": "107.178.254.65",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "337278",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.474Z",
+        "time": 43.2029999938095,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel?google_nid=pippio_dmp&google_cm&google_no_sc&m=CMwpElsKVwgBEJInGlBmMDNhOTdjMjNjNjRlODNiNmYxZTFkMGYxODAxMDA0Y2ViZjE2ZWQ2ZDgzMTkxZTIyNmQwYzM1ZTdhNTNhNmVlNzkxNDI2YjU0MTdkY2UyMRAAGgwI8JzX5wUSBAgCEABCAEoA",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_nid",
+              "value": "pippio_dmp"
+            },
+            {
+              "name": "google_cm",
+              "value": ""
+            },
+            {
+              "name": "google_no_sc",
+              "value": ""
+            },
+            {
+              "name": "m",
+              "value": "CMwpElsKVwgBEJInGlBmMDNhOTdjMjNjNjRlODNiNmYxZTFkMGYxODAxMDA0Y2ViZjE2ZWQ2ZDgzMTkxZTIyNmQwYzM1ZTdhNTNhNmVlNzkxNDI2YjU0MTdkY2UyMRAAGgwI8JzX5wUSBAgCEABCAEoA"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "location",
+              "value": "https://pippio.com/api/sync/ddp?pid=2&m=CMwpElsKVwgBEJInGlBmMDNhOTdjMjNjNjRlODNiNmYxZTFkMGYxODAxMDA0Y2ViZjE2ZWQ2ZDgzMTkxZTIyNmQwYzM1ZTdhNTNhNmVlNzkxNDI2YjU0MTdkY2UyMRAAGgwI8JzX5wUSBAgCEABCAEoA&google_gid=CAESEJyqG1Pg1j-_scqW8kDzTkg&google_cver=1"
+            },
+            {
+              "name": "p3p",
+              "value": "policyref=\"https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\""
+            },
+            {
+              "name": "status",
+              "value": "302"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html; charset=UTF-8"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "454"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "https://pippio.com/api/sync/ddp?pid=2&m=CMwpElsKVwgBEJInGlBmMDNhOTdjMjNjNjRlODNiNmYxZTFkMGYxODAxMDA0Y2ViZjE2ZWQ2ZDgzMTkxZTIyNmQwYzM1ZTdhNTNhNmVlNzkxNDI2YjU0MTdkY2UyMRAAGgwI8JzX5wUSBAgCEABCAEoA&google_gid=CAESEJyqG1Pg1j-_scqW8kDzTkg&google_cver=1",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 234
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.5829999959683045,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.11099999999999999,
+          "wait": 41.692999998082406,
+          "receive": 0.8159999997587875,
+          "_blocked_queueing": 0.24599999596830457
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.518Z",
+        "time": 68.5900000098627,
+        "request": {
+          "method": "GET",
+          "url": "https://pippio.com/api/sync/ddp?pid=2&m=CMwpElsKVwgBEJInGlBmMDNhOTdjMjNjNjRlODNiNmYxZTFkMGYxODAxMDA0Y2ViZjE2ZWQ2ZDgzMTkxZTIyNmQwYzM1ZTdhNTNhNmVlNzkxNDI2YjU0MTdkY2UyMRAAGgwI8JzX5wUSBAgCEABCAEoA&google_gid=CAESEJyqG1Pg1j-_scqW8kDzTkg&google_cver=1",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "pid",
+              "value": "2"
+            },
+            {
+              "name": "m",
+              "value": "CMwpElsKVwgBEJInGlBmMDNhOTdjMjNjNjRlODNiNmYxZTFkMGYxODAxMDA0Y2ViZjE2ZWQ2ZDgzMTkxZTIyNmQwYzM1ZTdhNTNhNmVlNzkxNDI2YjU0MTdkY2UyMRAAGgwI8JzX5wUSBAgCEABCAEoA"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEJyqG1Pg1j-_scqW8kDzTkg"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 307,
+          "statusText": "Temporary Redirect",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 google"
+            },
+            {
+              "name": "P3p",
+              "value": "CP=\"NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA\""
+            },
+            {
+              "name": "Location",
+              "value": "https://tags.rd.linksynergy.com/rcs?ns=lr&uid3="
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store"
+            },
+            {
+              "name": "Timing-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Alt-Svc",
+              "value": "clear"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown"
+          },
+          "redirectURL": "https://tags.rd.linksynergy.com/rcs?ns=lr&uid3=",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 435
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.6390000093327834,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.056999999999999995,
+          "wait": 66.91099999516737,
+          "receive": 0.9830000053625554,
+          "_blocked_queueing": 0.22100000933278352
+        },
+        "serverIPAddress": "107.178.254.65",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "337278",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.586Z",
+        "time": 176.9149999891892,
+        "request": {
+          "method": "GET",
+          "url": "https://tags.rd.linksynergy.com/rcs?ns=lr&uid3=",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ns",
+              "value": "lr"
+            },
+            {
+              "name": "uid3",
+              "value": ""
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 303,
+          "statusText": "See Other",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 google"
+            },
+            {
+              "name": "P3P",
+              "value": "policyref=\"/p3p.xml\", CP=\"DSP NOI ADM PSAo PSDo OUR BUS NAV COM UNI INT\""
+            },
+            {
+              "name": "Location",
+              "value": "https://idsync.rlcdn.com/458249.gif?partner_uid=755a9cdb-39d5-4f34-9ff3-74ddf135538f"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-store"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=utf-8"
+            },
+            {
+              "name": "Alt-Svc",
+              "value": "clear"
+            },
+            {
+              "name": "Content-Length",
+              "value": "111"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "https://idsync.rlcdn.com/458249.gif?partner_uid=755a9cdb-39d5-4f34-9ff3-74ddf135538f",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 682
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.58899999393709,
+          "dns": 16.248,
+          "ssl": 59.315,
+          "connect": 75.985,
+          "send": 0.11599999999999966,
+          "wait": 82.76399999933783,
+          "receive": 1.2129999959142879,
+          "_blocked_queueing": 0.23999999393709004
+        },
+        "serverIPAddress": "35.241.16.233",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "337327",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.747Z",
+        "time": 93.15800000331365,
+        "request": {
+          "method": "GET",
+          "url": "https://idsync.rlcdn.com/458249.gif?partner_uid=755a9cdb-39d5-4f34-9ff3-74ddf135538f",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "partner_uid",
+              "value": "755a9cdb-39d5-4f34-9ff3-74ddf135538f"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:50:40 GMT"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 google"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "P3p",
+              "value": "CP=\"NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA\""
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store"
+            },
+            {
+              "name": "Timing-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Alt-Svc",
+              "value": "clear"
+            },
+            {
+              "name": "Content-Length",
+              "value": "42"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 42,
+            "mimeType": "image/gif",
+            "text": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 580
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 38.07600000849925,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.05799999999999983,
+          "wait": 54.27200000216998,
+          "receive": 0.7519999926444143,
+          "_blocked_queueing": 0.3260000084992498
+        },
+        "serverIPAddress": "34.95.92.78",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2377",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "connection": "337341",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:50:40.843Z",
+        "time": 20.027999999001622,
+        "request": {
+          "method": "GET",
+          "url": "https://pagead2.googlesyndication.com/favicon.ico",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/favicon.ico"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "image/webp,image/apng,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pagead2.googlesyndication.com"
+            },
+            {
+              "name": "referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "x-client-data",
+              "value": "CIi2yQEIprbJAQjBtskBCKmdygEIqKPKAQixp8oBCOKoygEI8anKAQifrsoBGM+qygE="
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Sun, 02 Jun 2019 14:47:31 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "last-modified",
+              "value": "Thu, 21 Apr 2016 03:17:22 GMT"
+            },
+            {
+              "name": "server",
+              "value": "sffe"
+            },
+            {
+              "name": "age",
+              "value": "126189"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "public, max-age=31536000"
+            },
+            {
+              "name": "accept-ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "885"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Mon, 01 Jun 2020 14:47:31 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1150,
+            "mimeType": "image/x-icon"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 1065
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.4079999965401366,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.10299999999999998,
+          "wait": 18.164999999712222,
+          "receive": 0.35200000274926424,
+          "_blocked_queueing": 0.7849999965401366
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "other"
+        },
+        "_priority": "High",
+        "_resourceType": "other",
+        "pageref": "page_1"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.874Z",
+        "time": 131.91700000606943,
+        "request": {
+          "method": "GET",
+          "url": "https://d.agkn.com/pixel/2175/?google_gid=CAESEP-S3Zs5f0_kq11XTCZP_mE&google_cver=1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_gid",
+              "value": "CAESEP-S3Zs5f0_kq11XTCZP_mE"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Apache-Coyote/1.1"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"NOI DSP COR CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT\""
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Content-Length",
+              "value": "43"
+            },
+            {
+              "name": "Expires",
+              "value": "Sat, 01 Jan 2000 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 43,
+            "mimeType": "image/gif",
+            "text": "R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 553
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.710000007529743,
+          "dns": 0,
+          "ssl": 49.332,
+          "connect": 49.337,
+          "send": 0.0969999999999942,
+          "wait": 81.26599999424909,
+          "receive": 0.5070000042906031,
+          "_blocked_queueing": 0.710000007529743
+        },
+        "serverIPAddress": "34.213.130.37",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "connection": "337664",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.875Z",
+        "time": 64.62200000532903,
+        "request": {
+          "method": "GET",
+          "url": "https://id.rlcdn.com/466606.gif?cparams=google_push%3DAHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og&google_gid=CAESEPpf2T4-2AsAR_4rer3RfNs&google_cver=1",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "cparams",
+              "value": "google_push%3DAHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEPpf2T4-2AsAR_4rer3RfNs"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 307,
+          "statusText": "Temporary Redirect",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "Via",
+              "value": "1.1 google"
+            },
+            {
+              "name": "P3p",
+              "value": "CP=\"NOI DSP COR NID CURa ADMa DEVa PSAa PSDa OUR BUS COM INT OTC PUR STA\""
+            },
+            {
+              "name": "Location",
+              "value": "https://cm.g.doubleclick.net/pixel?google_nid=liveramp&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og&google_hm=WGMzMDcwTDVPT2Nxdl9JREdNV2UyWURSOUZHMVlsNUU1VEo3cnpmRy1PaVJZVGtCcw==&google_cm"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store"
+            },
+            {
+              "name": "Timing-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "name": "Alt-Svc",
+              "value": "clear"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown"
+          },
+          "redirectURL": "https://cm.g.doubleclick.net/pixel?google_nid=liveramp&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og&google_hm=WGMzMDcwTDVPT2Nxdl9JREdNV2UyWURSOUZHMVlsNUU1VEo3cnpmRy1PaVJZVGtCcw==&google_cm",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 742
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.0030000007590278,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.04799999999999999,
+          "wait": 62.63800000158232,
+          "receive": 0.9330000029876828,
+          "_blocked_queueing": 0.6900000007590279
+        },
+        "serverIPAddress": "34.95.92.78",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "335135",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.875Z",
+        "time": 77.65500000095926,
+        "request": {
+          "method": "GET",
+          "url": "https://us-u.openx.net/w/1.0/pd?ph=bbb82fae-1d27-4d90-bb10-e24164ecd7bc&google_gid=CAESEPIJ9jHcY2j4jK3-DPmfar4&google_cver=1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ph",
+              "value": "bbb82fae-1d27-4d90-bb10-e24164ecd7bc"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEPIJ9jHcY2j4jK3-DPmfar4"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "Moved Temporarily",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Location",
+              "value": "https://pixel-sync.sitescout.com/dmp/pixelSync?nid=4&gdpr=0"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "OXGW/16.146.0"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"CUR ADM OUR NOR STA NID\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "image/gif"
+          },
+          "redirectURL": "https://pixel-sync.sitescout.com/dmp/pixelSync?nid=4&gdpr=0",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 586
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 3.0960000003278254,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.05700000000000005,
+          "wait": 73.39600000456069,
+          "receive": 1.10599999607075,
+          "_blocked_queueing": 2.7520000003278255
+        },
+        "serverIPAddress": "173.241.244.143",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "335142",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.877Z",
+        "time": 39.74500000185799,
+        "request": {
+          "method": "GET",
+          "url": "https://image6.pubmatic.com/AdServer/UCookieSetPug?oid=1&rd=https%3A%2F%2Fcm.g.doubleclick.net%2Fpixel%3Fgoogle_nid%3Dpmeb%26google_sc%3D1%26google_hm%3D%23%23B64_16B_PM_UID%26google_redir%3Dhttps%25253A%25252F%25252Fimage8.pubmatic.com%25252FAdServer%25252FImgSync%25253Fsec%25253D1%252526p%25253D156578%252526mpc%25253D4%252526fp%25253D1%252526pu%25253Dhttps%2525253A%2525252F%2525252Fimage4.pubmatic.com%2525252FAdServer%2525252FSPug%2525253Fp%2525253D156578%25252526sc%2525253D1&google_gid=CAESEB9H3qdV26kxEiz-BJ_TY-M&google_cver=1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "oid",
+              "value": "1"
+            },
+            {
+              "name": "rd",
+              "value": "https%3A%2F%2Fcm.g.doubleclick.net%2Fpixel%3Fgoogle_nid%3Dpmeb%26google_sc%3D1%26google_hm%3D%23%23B64_16B_PM_UID%26google_redir%3Dhttps%25253A%25252F%25252Fimage8.pubmatic.com%25252FAdServer%25252FImgSync%25253Fsec%25253D1%252526p%25253D156578%252526mpc%25253D4%252526fp%25253D1%252526pu%25253Dhttps%2525253A%2525252F%2525252Fimage4.pubmatic.com%2525252FAdServer%2525252FSPug%2525253Fp%2525253D156578%25252526sc%2525253D1"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEB9H3qdV26kxEiz-BJ_TY-M"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "Found",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Location",
+              "value": "https://cm.g.doubleclick.net/pixel?google_nid=pmeb&google_sc=1&google_hm=HKZfeqzFTvu10nThtdJPfw%3D%3D&google_redir=https%3A%2F%2Fimage8.pubmatic.com%2FAdServer%2FImgSync%3Fsec%3D1%26p%3D156578%26mpc%3D4%26fp%3D1%26pu%3Dhttps%253A%252F%252Fimage4.pubmatic.com%252FAdServer%252FSPug%253Fp%253D156578%2526sc%253D1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/html; charset=UTF-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "408"
+            },
+            {
+              "name": "P3p",
+              "value": "CP=\"NOI DSP COR LAW CUR ADMo DEVo TAIo PSAo PSDo IVAo IVDo HISo OTPo OUR SAMo BUS UNI COM NAV INT DEM CNT STA PRE LOC\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "https://cm.g.doubleclick.net/pixel?google_nid=pmeb&google_sc=1&google_hm=HKZfeqzFTvu10nThtdJPfw%3D%3D&google_redir=https%3A%2F%2Fimage8.pubmatic.com%2FAdServer%2FImgSync%3Fsec%3D1%26p%3D156578%26mpc%3D4%26fp%3D1%26pu%3Dhttps%253A%252F%252Fimage4.pubmatic.com%252FAdServer%252FSPug%253Fp%253D156578%2526sc%253D1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 626
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.0649999952986837,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.04199999999999998,
+          "wait": 36.81699999783188,
+          "receive": 0.8210000087274238,
+          "_blocked_queueing": 1.7269999952986836
+        },
+        "serverIPAddress": "104.36.113.23",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "335169",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.877Z",
+        "time": 40.1480000000447,
+        "request": {
+          "method": "GET",
+          "url": "https://token.rubiconproject.com/token?pid=2249&pt=n&google_gid=CAESEE1DyZ245WggYaQZEWpQWI8&google_cver=1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "pid",
+              "value": "2249"
+            },
+            {
+              "name": "pt",
+              "value": "n"
+            },
+            {
+              "name": "google_gid",
+              "value": "CAESEE1DyZ245WggYaQZEWpQWI8"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "Found",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Location",
+              "value": "https://cm.g.doubleclick.net/pixel?google_nid=rubicon&google_cm&google_sc"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache,no-store,must-revalidate"
+            },
+            {
+              "name": "P3P",
+              "value": "P=\"NOI CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT\""
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "X-RPHost",
+              "value": "ec5d4601d866c993cb911ece08796dc5"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown"
+          },
+          "redirectURL": "https://cm.g.doubleclick.net/pixel?google_nid=rubicon&google_cm&google_sc",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 312
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 2.433999993985519,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.03999999999999998,
+          "wait": 36.4810000023637,
+          "receive": 1.193000003695488,
+          "_blocked_queueing": 2.066999993985519
+        },
+        "serverIPAddress": "8.39.36.172",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "337210",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.877Z",
+        "time": 45.79099999682512,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel/attr?d=AHNF13ID7tY7uFNhPcTpJ-WXQkUKdhoIBk5GZl7ylS8UevkRYDpo4M8Oky9m_5I",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "d",
+              "value": "AHNF13ID7tY7uFNhPcTpJ-WXQkUKdhoIBk5GZl7ylS8UevkRYDpo4M8Oky9m_5I"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 204,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "status",
+              "value": "204"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html",
+            "text": "",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 66
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 3.0389999881200493,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.12,
+          "wait": 42.425999997174365,
+          "receive": 0.2060000115307048,
+          "_blocked_queueing": 2.5439999881200492
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [],
+            "parent": {
+              "description": "Image",
+              "callFrames": [
+                {
+                  "functionName": "",
+                  "scriptId": "2766",
+                  "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                  "lineNumber": 5,
+                  "columnNumber": 429
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "2766",
+                  "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                  "lineNumber": 5,
+                  "columnNumber": 468
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.917Z",
+        "time": 45.543000000179745,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel?google_nid=pmeb&google_sc=1&google_hm=HKZfeqzFTvu10nThtdJPfw%3D%3D&google_redir=https%3A%2F%2Fimage8.pubmatic.com%2FAdServer%2FImgSync%3Fsec%3D1%26p%3D156578%26mpc%3D4%26fp%3D1%26pu%3Dhttps%253A%252F%252Fimage4.pubmatic.com%252FAdServer%252FSPug%253Fp%253D156578%2526sc%253D1&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_nid",
+              "value": "pmeb"
+            },
+            {
+              "name": "google_sc",
+              "value": "1"
+            },
+            {
+              "name": "google_hm",
+              "value": "HKZfeqzFTvu10nThtdJPfw%3D%3D"
+            },
+            {
+              "name": "google_redir",
+              "value": "https%3A%2F%2Fimage8.pubmatic.com%2FAdServer%2FImgSync%3Fsec%3D1%26p%3D156578%26mpc%3D4%26fp%3D1%26pu%3Dhttps%253A%252F%252Fimage4.pubmatic.com%252FAdServer%252FSPug%253Fp%253D156578%2526sc%253D1"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "content-type",
+              "value": "image/png"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "170"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 170,
+            "mimeType": "image/png",
+            "text": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1wUdDQ0tUdU3bgAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAADUlEQVQI12OoaXnlAAAFlQIrA6Le9wAAAABJRU5ErkJgggo=",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 200
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.8429999888744205,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.10499999999999998,
+          "wait": 44.26000000703521,
+          "receive": 0.335000004270114,
+          "_blocked_queueing": 0.3539999888744205
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.917Z",
+        "time": 45.209000003524125,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel?google_nid=rubicon&google_cm&google_sc",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_nid",
+              "value": "rubicon"
+            },
+            {
+              "name": "google_cm",
+              "value": ""
+            },
+            {
+              "name": "google_sc",
+              "value": ""
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "location",
+              "value": "https://pixel.rubiconproject.com/tap.php?v=7751&nid=2249&expires=30&put=CAESEOv-bY69qxGtsg8T9aZHQ88&google_cver=1"
+            },
+            {
+              "name": "p3p",
+              "value": "policyref=\"https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml\", CP=\"CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR\""
+            },
+            {
+              "name": "status",
+              "value": "302"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html; charset=UTF-8"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "326"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "https://pixel.rubiconproject.com/tap.php?v=7751&nid=2249&expires=30&put=CAESEOv-bY69qxGtsg8T9aZHQ88&google_cver=1",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 120
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.81499999717623,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.068,
+          "wait": 43.22900000604801,
+          "receive": 1.0970000002998859,
+          "_blocked_queueing": 0.44299999717622995
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.940Z",
+        "time": 44.36699999496341,
+        "request": {
+          "method": "GET",
+          "url": "https://cm.g.doubleclick.net/pixel?google_nid=liveramp&google_push=AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og&google_hm=WGMzMDcwTDVPT2Nxdl9JREdNV2UyWURSOUZHMVlsNUU1VEo3cnpmRy1PaVJZVGtCcw==&google_cm",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "google_nid",
+              "value": "liveramp"
+            },
+            {
+              "name": "google_push",
+              "value": "AHNF13KKSmBxGD6oDK9GEw5O0kvgmFa3qM30zpNaKl72Og"
+            },
+            {
+              "name": "google_hm",
+              "value": "WGMzMDcwTDVPT2Nxdl9JREdNV2UyWURSOUZHMVlsNUU1VEo3cnpmRy1PaVJZVGtCcw=="
+            },
+            {
+              "name": "google_cm",
+              "value": ""
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "server",
+              "value": "HTTP server (unknown)"
+            },
+            {
+              "name": "content-type",
+              "value": "image/png"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache, must-revalidate"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "170"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Fri, 01 Jan 1990 00:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 170,
+            "mimeType": "image/png",
+            "text": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1wUdDQ0tUdU3bgAAAB10RVh0Q29tbWVudABDcmVhdGVkIHdpdGggVGhlIEdJTVDvZCVuAAAADUlEQVQI12OoaXnlAAAFlQIrA6Le9wAAAABJRU5ErkJgggo=",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 189
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.7289999939473346,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.09399999999999997,
+          "wait": 43.22599999522511,
+          "receive": 0.31800000579096377,
+          "_blocked_queueing": 0.3259999939473346
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.953Z",
+        "time": 121.9609999959534,
+        "request": {
+          "method": "GET",
+          "url": "https://pixel-sync.sitescout.com/dmp/pixelSync?nid=4&gdpr=0",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "nid",
+              "value": "4"
+            },
+            {
+              "name": "gdpr",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 302,
+          "statusText": "",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "AC1.1"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"NON DEVa PSAa PSDa OUR NOR NAV\",policyref=\"/w3c/p3p.xml\""
+            },
+            {
+              "name": "Location",
+              "value": "https://us-u.openx.net/w/1.0/sd?id=537072977&val=fcbdad9c-16ad-4189-91c2-533adbaddf59"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=0,no-cache,no-store"
+            },
+            {
+              "name": "Content-Length",
+              "value": "0"
+            },
+            {
+              "name": "Expires",
+              "value": "Tue, 11 Oct 1977 12:34:56 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 0,
+            "mimeType": "x-unknown"
+          },
+          "redirectURL": "https://us-u.openx.net/w/1.0/sd?id=537072977&val=fcbdad9c-16ad-4189-91c2-533adbaddf59",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 585
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.582999992926605,
+          "dns": 15.306,
+          "ssl": 76.64800000000001,
+          "connect": 92.19800000000001,
+          "send": 0.09599999999998943,
+          "wait": 12.865000006809836,
+          "receive": 0.9129999962169677,
+          "_blocked_queueing": 0.27999999292660505
+        },
+        "serverIPAddress": "69.174.248.224",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "other",
+        "connection": "337739",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:04.962Z",
+        "time": 124.92799999017734,
+        "request": {
+          "method": "GET",
+          "url": "https://pixel.rubiconproject.com/tap.php?v=7751&nid=2249&expires=30&put=CAESEOv-bY69qxGtsg8T9aZHQ88&google_cver=1",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "v",
+              "value": "7751"
+            },
+            {
+              "name": "nid",
+              "value": "2249"
+            },
+            {
+              "name": "expires",
+              "value": "30"
+            },
+            {
+              "name": "put",
+              "value": "CAESEOv-bY69qxGtsg8T9aZHQ88"
+            },
+            {
+              "name": "google_cver",
+              "value": "1"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:52:04 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "Rubicon Project"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"NOI CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT\""
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Content-Length",
+              "value": "42"
+            },
+            {
+              "name": "X-RPHost",
+              "value": "nzXI0GIRlzpuFfVLlmSdAA"
+            },
+            {
+              "name": "Expires",
+              "value": "0"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 42,
+            "mimeType": "image/gif",
+            "text": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 1031
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.4149999950192869,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.06300000000000006,
+          "wait": 122.67900000335742,
+          "receive": 0.770999991800636,
+          "_blocked_queueing": 0.8019999950192869
+        },
+        "serverIPAddress": "8.39.36.142",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "connection": "337183",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:05.060Z",
+        "time": 73.03800000227056,
+        "request": {
+          "method": "GET",
+          "url": "https://us-u.openx.net/w/1.0/sd?id=537072977&val=fcbdad9c-16ad-4189-91c2-533adbaddf59",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "id",
+              "value": "537072977"
+            },
+            {
+              "name": "val",
+              "value": "fcbdad9c-16ad-4189-91c2-533adbaddf59"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "http/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 04 Jun 2019 01:52:05 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "OXGW/16.146.0"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept"
+            },
+            {
+              "name": "P3P",
+              "value": "CP=\"CUR ADM OUR NOR STA NID\""
+            },
+            {
+              "name": "Cache-Control",
+              "value": "private, max-age=0, no-cache"
+            },
+            {
+              "name": "Content-Type",
+              "value": "image/gif"
+            },
+            {
+              "name": "Content-Length",
+              "value": "43"
+            },
+            {
+              "name": "Expires",
+              "value": "Mon, 26 Jul 1997 05:00:00 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 43,
+            "mimeType": "image/gif",
+            "text": "R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 319
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 0.7159999983431771,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.059,
+          "wait": 71.88399999931362,
+          "receive": 0.37900000461377203,
+          "_blocked_queueing": 0.29599999834317714
+        },
+        "serverIPAddress": "173.241.244.143",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 429
+              },
+              {
+                "functionName": "",
+                "scriptId": "2766",
+                "url": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html",
+                "lineNumber": 5,
+                "columnNumber": 468
+              }
+            ]
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "connection": "335142",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2019-06-04T01:52:05.135Z",
+        "time": 18.662999995285645,
+        "request": {
+          "method": "GET",
+          "url": "https://pagead2.googlesyndication.com/favicon.ico",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": ":path",
+              "value": "/favicon.ico"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-US,en;q=0.9"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+            },
+            {
+              "name": "accept",
+              "value": "image/webp,image/apng,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": ":authority",
+              "value": "pagead2.googlesyndication.com"
+            },
+            {
+              "name": "referer",
+              "value": "https://pagead2.googlesyndication.com/pagead/s/cookie_push.html"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "x-client-data",
+              "value": "CIi2yQEIprbJAQjBtskBCKmdygEIqKPKAQixp8oBCOKoygEI8anKAQifrsoBGM+qygE="
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0+quic/46",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Sun, 02 Jun 2019 14:47:31 GMT"
+            },
+            {
+              "name": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "last-modified",
+              "value": "Thu, 21 Apr 2016 03:17:22 GMT"
+            },
+            {
+              "name": "server",
+              "value": "sffe"
+            },
+            {
+              "name": "age",
+              "value": "126274"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "name": "status",
+              "value": "200"
+            },
+            {
+              "name": "cache-control",
+              "value": "public, max-age=31536000"
+            },
+            {
+              "name": "accept-ranges",
+              "value": "bytes"
+            },
+            {
+              "name": "alt-svc",
+              "value": "quic=\"googleads.g.doubleclick.net:443\"; ma=2592000; v=\"46,44,43,39\",quic=\":443\"; ma=2592000; v=\"46,44,43,39\""
+            },
+            {
+              "name": "content-length",
+              "value": "885"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "0"
+            },
+            {
+              "name": "expires",
+              "value": "Mon, 01 Jun 2020 14:47:31 GMT"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1150,
+            "mimeType": "image/x-icon",
+            "text": "AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7PT7/3zF6/9Ptu//RbHx/0227/+Tzvb/9vv5/97h0f9JeBz/NHoA/z98Av9AfAD/PHsA/0F6AP8AAAAA/vz7/1+33/8Mp+z/FrHw/xWy8f8bs/T/Hqrx/3zE7v////7/t8qp/zF2A/87gwH/P4ID/z59AP8+egD/Q3kA/97s8v8botj/ELn3/wy58f8PtfL/D7Lw/xuz9P8vq+f/8/n///779v9KhR3/OYYA/0GFAv88hgD/QIAC/z17AP/0+/j/N6bM/wC07/8Cxf7/CsP7/wm+9v8Aqur/SrDb//7+/v///P7/VZEl/zSJAP87jQD/PYYA/0OBBf8+fQH///3//9Dp8/84sM7/CrDf/wC14/8CruL/KqnW/9ns8f/8/v//4OjX/z+GDf85kAD/PIwD/z2JAv8+hQD/PoEA/9C7pv/97uv////+/9Xw+v+w3ej/ls/e/+rz9///////+/z6/22mSf8qjQH/OJMA/zuQAP85iwL/PIgA/zyFAP+OSSL/nV44/7J+Vv/AkG7/7trP//7//f/9//7/6/Lr/2uoRv8tjQH/PJYA/zuTAP87kwD/PY8A/z2KAP89hAD/olkn/6RVHP+eSgj/mEgR//Ho3//+/v7/5Ozh/1GaJv8tlAD/OZcC/zuXAv84lAD/O5IC/z2PAf89iwL/OIkA/6hWFf+cTxD/pm9C/76ihP/8/v//+////8nav/8fdwL/NZsA/zeZAP83mgD/PJQB/zyUAf84jwD/PYsB/z6HAf+fXif/1r6s//79///58u//3r+g/+3i2v/+//3/mbiF/yyCAP87mgP/OpgD/zeWAP85lgD/OpEB/z+TAP9ChwH/7eHb/////v/28ej/tWwo/7tUAP+5XQ7/5M+5/////v+bsZn/IHAd/zeVAP89lgP/O5MA/zaJCf8tZTr/DyuK//3////9////0qmC/7lTAP/KZAT/vVgC/8iQWf/+//3///j//ygpx/8GGcL/ESax/xEgtv8FEMz/AALh/wAB1f///f7///z//758O//GXQL/yGYC/8RaAv/Ojlf/+/////////9QU93/BAD0/wAB//8DAP3/AAHz/wAA5f8DAtr///////v7+/+2bCT/yGMA/89mAP/BWQD/0q+D///+/////P7/Rkbg/wEA+f8AA/z/AQH5/wMA8P8AAev/AADf///7/P////7/uINQ/7lXAP/MYwL/vGIO//Lm3P/8/v//1dT2/woM5/8AAP3/AwH+/wAB/f8AAfb/BADs/wAC4P8AAAAA//z7/+LbzP+mXyD/oUwE/9Gshv/8//3/7/H5/zo/w/8AAdX/AgL6/wAA/f8CAP3/AAH2/wAA7v8AAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAA==",
+            "encoding": "base64"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 1042
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.768999999081716,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.1190000000000001,
+          "wait": 16.378999993111005,
+          "receive": 0.39600000309292227,
+          "_blocked_queueing": 0.8139999990817159
+        },
+        "serverIPAddress": "[2607:f8b0:4007:80e::2002]",
+        "_initiator": {
+          "type": "other"
+        },
+        "_priority": "High",
+        "_resourceType": "other",
+        "pageref": "page_2"
+      }
+    ]
+  }
+}

@@ -1,123 +1,1624 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI-Enhanced Content Upload</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-W2p8wNDoH1bCC6zjtFjR5mdffuDJ13PpkJWl/0T0nMIbQGm3tjhIchXQea5BeXf5" crossorigin="anonymous">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #333; /* Change background to dark gray */
-      color: #fff;
-    }
-    header {
-      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-      background-color: #444; /* Change background to slightly darker gray */
-      border-radius: 8px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adjust shadow */
-    }
-    h1, h2 {
-      text-align: center;
-      color: #fff;
-    }
-    p {
-      text-align: justify;
-      line-height: 1.6;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    button {
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.5s ease; /* Adjust transition */
-      border-radius: 20px; /* Make the button rounded */
-      display: block; /* Make the button a block-level element */
-      margin: 0 auto; /* Center the button horizontally */
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    footer {
-      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-    .feature-icon {
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-    .feature {
-      display: flex;
-      align-items: center;
-    }
-  </style>
+	<meta name="generator" content="Hugo 0.119.0">
+    <script src="static-assets/js/ie-shims.js"></script>
+
+    
+
+    <script id="localization-script" data-languages="{&#34;ca&#34;:{&#34;dismiss&#34;:&#34;Omet&#34;,&#34;message&#34;:&#34;Aquesta pàgina també està disponible en Català. Voldríeu canviar d&#39;idioma?&#34;,&#34;url&#34;:&#34;/ca/&#34;,&#34;yes&#34;:&#34;Sí&#34;},&#34;de&#34;:{&#34;dismiss&#34;:&#34;Schließen&#34;,&#34;message&#34;:&#34;Diese Seite ist auch auf Deutsch verfügbar. Möchten Sie die Sprache wechseln?&#34;,&#34;url&#34;:&#34;/de/&#34;,&#34;yes&#34;:&#34;Ja&#34;},&#34;en&#34;:{&#34;dismiss&#34;:&#34;Dismiss&#34;,&#34;message&#34;:&#34;This page is also available in English. Would you like to switch languages?&#34;,&#34;url&#34;:&#34;/&#34;,&#34;yes&#34;:&#34;Yes&#34;},&#34;en-in&#34;:{&#34;dismiss&#34;:&#34;Dismiss&#34;,&#34;message&#34;:&#34;This page is also available in English (India). Would you like to switch languages?&#34;,&#34;url&#34;:&#34;/en-in/&#34;,&#34;yes&#34;:&#34;Yes&#34;},&#34;es&#34;:{&#34;dismiss&#34;:&#34;Descartar&#34;,&#34;message&#34;:&#34;Esta página también está disponible en Español. ¿Te gustaría cambiar el idioma?&#34;,&#34;url&#34;:&#34;/es/&#34;,&#34;yes&#34;:&#34;Sí&#34;},&#34;fil&#34;:{&#34;dismiss&#34;:&#34;I-dismiss&#34;,&#34;message&#34;:&#34;Available din ang page na ito sa Filipino. Gusto mo bang magpalit ng wika?&#34;,&#34;url&#34;:&#34;/fil/&#34;,&#34;yes&#34;:&#34;Oo&#34;},&#34;fr&#34;:{&#34;dismiss&#34;:&#34;Ignorer&#34;,&#34;message&#34;:&#34;Cette page est également disponible en Français. Voulez-vous changer de langue ?&#34;,&#34;url&#34;:&#34;/fr/&#34;,&#34;yes&#34;:&#34;Oui&#34;},&#34;hi&#34;:{&#34;dismiss&#34;:&#34;खारिज करें&#34;,&#34;message&#34;:&#34;इस पेज को हिन्दी में भी देखा जा सकता है. क्या आप पेज की भाषा बदलना चाहेंगे?&#34;,&#34;url&#34;:&#34;/hi/&#34;,&#34;yes&#34;:&#34;हां&#34;},&#34;id&#34;:{&#34;dismiss&#34;:&#34;Tutup&#34;,&#34;message&#34;:&#34;Halaman ini tersedia dalam bahasa Indonesia. Apakah Anda ingin mengubah bahasanya?&#34;,&#34;url&#34;:&#34;/id/&#34;,&#34;yes&#34;:&#34;Ya&#34;},&#34;it&#34;:{&#34;dismiss&#34;:&#34;Ignora&#34;,&#34;message&#34;:&#34;Questa pagina è disponibile anche in Italiano. Preferisci cambiare lingua?&#34;,&#34;url&#34;:&#34;/it/&#34;,&#34;yes&#34;:&#34;Sì&#34;},&#34;ja&#34;:{&#34;dismiss&#34;:&#34;表示しない&#34;,&#34;message&#34;:&#34;このページは日本語でもご覧になれます。言語を変更しますか？&#34;,&#34;url&#34;:&#34;/ja/&#34;,&#34;yes&#34;:&#34;はい&#34;},&#34;ko&#34;:{&#34;dismiss&#34;:&#34;숨기기&#34;,&#34;message&#34;:&#34;이 페이지는 한국어로도 이용할 수 있습니다. 언어를 전환하시겠습니까?&#34;,&#34;url&#34;:&#34;/ko/&#34;,&#34;yes&#34;:&#34;예&#34;},&#34;nl&#34;:{&#34;dismiss&#34;:&#34;Sluiten&#34;,&#34;message&#34;:&#34;Deze pagina is ook beschikbaar in het Nederlands. Wilt u van taal wisselen?&#34;,&#34;url&#34;:&#34;/nl/&#34;,&#34;yes&#34;:&#34;Ja&#34;},&#34;pl&#34;:{&#34;dismiss&#34;:&#34;Zamknij&#34;,&#34;message&#34;:&#34;Ta strona jest również dostępna w następującym języku: Polski. Czy chcesz zmienić wyświetlany język?&#34;,&#34;url&#34;:&#34;/pl/&#34;,&#34;yes&#34;:&#34;Tak&#34;},&#34;pt-br&#34;:{&#34;dismiss&#34;:&#34;Dispensar&#34;,&#34;message&#34;:&#34;Esta página também está disponível em Português. Gostaria de mudar de idioma?&#34;,&#34;url&#34;:&#34;/pt-br/&#34;,&#34;yes&#34;:&#34;Sim&#34;},&#34;ro&#34;:{&#34;dismiss&#34;:&#34;Închide&#34;,&#34;message&#34;:&#34;Această pagină este disponibilă și în Română. Doriți să schimbați limba?&#34;,&#34;url&#34;:&#34;/ro/&#34;,&#34;yes&#34;:&#34;Da&#34;},&#34;ru&#34;:{&#34;dismiss&#34;:&#34;Отклонить&#34;,&#34;message&#34;:&#34;Язык этой страницы можно изменить на Русский. Хотите?&#34;,&#34;url&#34;:&#34;/ru/&#34;,&#34;yes&#34;:&#34;Да&#34;},&#34;vi&#34;:{&#34;dismiss&#34;:&#34;Loại bỏ&#34;,&#34;message&#34;:&#34;Trang này cũng có sẵn trong Tiếng Việt. Bạn có muốn chuyển đổi ngôn ngữ?&#34;,&#34;url&#34;:&#34;/vi/&#34;,&#34;yes&#34;:&#34;Có&#34;},&#34;zh&#34;:{&#34;dismiss&#34;:&#34;关闭&#34;,&#34;message&#34;:&#34;本页面还有 中文 (中国) 版本。您想切换语言吗？&#34;,&#34;url&#34;:&#34;/zh/&#34;,&#34;yes&#34;:&#34;是&#34;}}" src="js/localization.min.js"></script>
+
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile. Download now to enjoy a faster ad-free browsing experience that saves data and battery life by blocking tracking software." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=1052879175, affiliate-data=pt=117981002&ct=smartbanner"/>
+    <meta property="og:title" content="Secure, Fast, &amp; Private Web Browser with Adblocker | Brave" />
+<meta property="og:description" content="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile. Download now to enjoy a faster ad-free browsing experience that saves data and battery life by blocking tracking software." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://brave.com/" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="en-in" />
+<meta property="og:locale:alternate" content="ja" />
+<meta property="og:locale:alternate" content="zh" />
+<meta property="og:locale:alternate" content="ko" />
+<meta property="og:locale:alternate" content="de" />
+<meta property="og:locale:alternate" content="fr" />
+<meta property="og:locale:alternate" content="es" />
+<meta property="og:locale:alternate" content="it" />
+<meta property="og:locale:alternate" content="pt-br" />
+<meta property="og:locale:alternate" content="fil" />
+<meta property="og:locale:alternate" content="hi" />
+<meta property="og:locale:alternate" content="id" />
+<meta property="og:locale:alternate" content="nl" />
+<meta property="og:locale:alternate" content="pl" />
+<meta property="og:locale:alternate" content="ru" />
+<meta property="og:locale:alternate" content="vi" />
+<meta property="og:locale:alternate" content="ca" />
+<meta property="og:locale:alternate" content="ro" />
+<meta property="og:image" content="https://brave.com/static-assets/images/brave-og.png"/>
+<meta property="og:updated_time" content="2024-02-21T00:00:00+00:00" /><meta property="og:site_name" content="Brave" />
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://brave.com/static-assets/images/brave-og.png"/>
+<meta name="twitter:title" content="Secure, Fast, &amp; Private Web Browser with Adblocker | Brave"/>
+<meta name="twitter:description" content="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile. Download now to enjoy a faster ad-free browsing experience that saves data and battery life by blocking tracking software."/>
+<meta name="twitter:site" content="@brave"/>
+<meta name="twitter:creator" content="@brave"/>
+
+    <meta itemprop="name" content="Secure, Fast, &amp; Private Web Browser with Adblocker | Brave">
+<meta itemprop="description" content="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile. Download now to enjoy a faster ad-free browsing experience that saves data and battery life by blocking tracking software."><meta id="js-params" name="js-params" content="{&#34;downloadBetaForAndroid&#34;:&#34;Download Beta for Android&#34;,&#34;downloadBetaForIOs&#34;:&#34;Download Beta for iOS&#34;,&#34;downloadBetaForLinux&#34;:&#34;Download Beta for Linux&#34;,&#34;downloadBetaForMacOs&#34;:&#34;Download Beta for macOS&#34;,&#34;downloadBetaForWindows&#34;:&#34;Download Beta for Windows&#34;,&#34;downloadBraveForAndroid&#34;:&#34;Download Brave for Android&#34;,&#34;downloadBraveForIOs&#34;:&#34;Download Brave for iOS&#34;,&#34;downloadBraveForLinux&#34;:&#34;Download Brave for Linux&#34;,&#34;downloadBraveForMacOs&#34;:&#34;Download Brave for macOS&#34;,&#34;downloadBraveForWindows&#34;:&#34;Download Brave for Windows&#34;,&#34;downloadDevForMacOs&#34;:&#34;Download Dev for macOS&#34;,&#34;downloadDevForWindows&#34;:&#34;Download Dev for Windows&#34;,&#34;downloadNightlyForAndroid&#34;:&#34;Download Nightly for Android&#34;,&#34;downloadNightlyForLinux&#34;:&#34;Download Nightly for Linux&#34;,&#34;downloadNightlyForMacOs&#34;:&#34;Download Nightly for macOS&#34;,&#34;downloadNightlyForWindows&#34;:&#34;Download Nightly for Windows&#34;,&#34;downloadUrlBase&#34;:&#34;https://laptop-updates.brave.com&#34;,&#34;notAvailableForAndroid&#34;:&#34;Not Available for Android&#34;,&#34;notAvailableForIOs&#34;:&#34;Not Available for iOS&#34;,&#34;notAvailableForLinux&#34;:&#34;Not Available for Linux&#34;,&#34;notAvailableForMacOs&#34;:&#34;Not Available for macOS&#34;,&#34;notAvailableForWindows&#34;:&#34;Not Available for Windows&#34;}">
+
+    <title>Secure, Fast, &amp; Private Web Browser with Adblocker | Brave</title>
+
+    <link rel="canonical" href="index.html">
+    
+    <link rel="alternate" href="index.html" hreflang="en" />
+    <link rel="alternate" href="en-in/index.html" hreflang="en-in" />
+    <link rel="alternate" href="ja/index.html" hreflang="ja" />
+    <link rel="alternate" href="zh/index.html" hreflang="zh" />
+    <link rel="alternate" href="ko/index.html" hreflang="ko" />
+    <link rel="alternate" href="de/index.html" hreflang="de" />
+    <link rel="alternate" href="fr/index.html" hreflang="fr" />
+    <link rel="alternate" href="es/index.html" hreflang="es" />
+    <link rel="alternate" href="it/index.html" hreflang="it" />
+    <link rel="alternate" href="pt-br/index.html" hreflang="pt-br" />
+    <link rel="alternate" href="fil/index.html" hreflang="tl" />
+    <link rel="alternate" href="hi/index.html" hreflang="hi" />
+    <link rel="alternate" href="id/index.html" hreflang="id" />
+    <link rel="alternate" href="nl/index.html" hreflang="nl" />
+    <link rel="alternate" href="pl/index.html" hreflang="pl" />
+    <link rel="alternate" href="ru/index.html" hreflang="ru" />
+    <link rel="alternate" href="vi/index.html" hreflang="vi" />
+    <link rel="alternate" href="ca/index.html" hreflang="ca" />
+    <link rel="alternate" href="ro/index.html" hreflang="ro" />
+<link rel="alternate" href="index.html" hreflang="x-default" />
+
+    <link rel="alternate" type="application/rss+xml" href="index.xml" title="Brave" />
+
+    <link rel="icon" href='static-assets/images/brave-favicon.png' />
+    <link rel="icon" href='static-assets/images/cropped-brave_appicon_release-32x32.png' sizes="32x32" />
+    <link rel="icon" href='static-assets/images/cropped-brave_appicon_release-192x192.png' sizes="192x192" />
+    <link rel="apple-touch-icon" href='static-assets/images/cropped-brave_appicon_release-180x180.png' />
+
+    
+        
+            
+            <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.brave.com/#organization",
+  "address": "580 Howard St. Unit 402, San Francisco, CA 94105, United States",
+  "legalName": "Brave Software Inc",
+  "name": "Brave Software",
+  "alternateName": "Brave Browser",
+  "description": "Brave make a suite of internet privacy tools, including our browser and search engine that help shield users from the ads, trackers, and other creepy stuff trying to follow them across the web.",
+  "url": "https://brave.com/",
+  "logo": "https://brave.com/static-assets/images/brave-logo-dark.svg",
+  "foundingDate": "2014-06-06",
+  "image": "https://brave.com/static-assets/images/brave-logo-dark.svg",
+  "sameAs": [
+    "https://twitter.com/brave",
+    "https://www.facebook.com/BraveSoftware/",
+    "https://www.youtube.com/bravesoftware",
+    "https://www.reddit.com/r/brave_browser/",
+    "https://en.wikipedia.org/wiki/Brave_(web_browser)",
+    "https://en.wikipedia.org/wiki/Brave_Search",
+    "https://github.com/brave/",
+    "https://www.linkedin.com/company/brave-software"
+  ]
+}</script>
+            
+        
+    
+
+    <link href="static-assets/css-old/main.min.css" rel="stylesheet" />
+
+    <link href="static-assets/css/fonts-latin.css" rel="stylesheet" />
+
+    <noscript><link href="static-assets/css-old/noscript.min.css" rel="stylesheet" />
+    </noscript>
+    <script src="js/is-platform.min.js"></script>
+    
+
+    <style>
+        :root {
+            --footnotes: "Footnotes";
+        }
+    </style>
+
+    
+        <script data-is-blog-post="false" data-is-404="false" data-matomo-id="2" src="static-assets/js/analysis.js"></script>
+
+<script type="text/javascript" src="../analytics.brave.com/matomo.js"></script>
+<noscript style="position:absolute;bottom:0"><img src="https://analytics.brave.com/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt=""></noscript>
+    
 </head>
-<body>
-  <header>
-    <h1>Blizzity - AI-Enhanced Content Upload</h1>
-  </header>
-  <div class="container">
-    <h2>About the App</h2>
-    <p>
-      Introducing an innovative platform designed to revolutionize the way users create and upload short-form content with the power of artificial intelligence. Our app offers a seamless and intuitive experience for content creators, enabling them to effortlessly produce captivating videos, images, and text-based content with AI assistance.
-    </p>
-    <h2>Key Features</h2>
-    <ul>
-      <li class="feature">
-        <i class="fas fa-robot feature-icon"></i>
-        AI-Driven Content Creation
-      </li>
-      <li class="feature">
-        <i class="fas fa-tools feature-icon"></i>
-        Smart Editing Tools
-      </li>
-      <li class="feature">
-        <i class="fas fa-paint-brush feature-icon"></i>
-        Customizable Templates
-      </li>
-      <li class="feature">
-        <i class="fas fa-comment-dots feature-icon"></i>
-        Real-Time Feedback and Suggestions
-      </li>
-      <li class="feature">
-        <i class="fas fa-share-alt feature-icon"></i>
-        Seamless Integration and Sharing
-      </li>
-      <li class="feature">
-        <i class="fas fa-lock feature-icon"></i>
-        Privacy and Security
-      </li>
-    </ul>
-    <h2>Download Now</h2>
-    <p>Experience the future of content creation. Download the AI-Enhanced Content Upload app now!</p>
-    <button><a href="#">Download</a></button>
+
+
+    
+
+<body class="home-page  theme--dark">
+    
+
+
+
+
+<div class="site-header-wrapper top-0 absolute lg:fixed w-full z-20">
+  <div
+  id="ls-banner"
+  class="hidden overflow-hidden bg-[#0d0f14] text-[#DBDEE2]"
+  data-theme="dark"
+>
+  <div
+    class="mx-auto flex flex-col items-center justify-center gap-x-6 gap-y-4 py-3 pl-6 pr-4 sm:flex-row lg:max-w-7xl"
+  >
+    <p id="ls-message" class="p-0 text-[1.25rem] sm:text-[1rem] leading-[1.6]"></p>
+    <div
+      class="grid w-[min(100%,250px)] grid-cols-2 gap-x-3 sm:grid-cols-[2fr,1fr]"
+    >
+      <a id="ls-url" href="#" class="leoButton isMedium isFilled text-center" data-track-event data-event-category="Research" data-event-action="Language suggestion banner" data-event-name="(Language suggestion banner): Yes">
+        Yes
+      </a>
+      <button id="ls-dismiss" class="leoButton isMedium isPlain" data-track-event data-event-category="Research" data-event-action="Language suggestion banner" data-event-name="(Language suggestion banner): Dismiss">
+        Dismiss
+      </button>
+    </div>
   </div>
-  <footer>
-    <p>&copy; 2024 Blizzity - AI-Enhanced Content Upload. All rights reserved. <a href="https://blizzity.de/terms" target="_blank">Terms of Service</a> | <a href="https://blizzity.de/privacy" target="_blank">Privacy Policy</a></p>
-  </footer>
+</div>
+
+
+  <header class="site-header site-header text-xs font-medium overflow-visible transition-[height,background-color] duration-300 ease-out">
+      <div class="h-full w-full flex items-center justify-between lg:max-w-7xl lg:mx-auto relative">
+          <a href="index.html" class="ml-6 mt-0 lg:pt-px">
+              <img src="static-assets/images/brave-logo-sans-text.svg" alt="Brave Software home" class="site-logo h-10" />
+          </a>
+          <input type="checkbox" id="nav-control" class="nav-control hidden">
+          <label for="nav-control" class="toggle-button lg:hidden z-30 mr-4">
+            <div class="nojs-toggle rounded-xl bg-dark-primary-500">
+              <div class="nav-icon"></div>
+            </div>
+          </label>
+          <nav class="site-nav w-full hidden lg:contents rounded-xl lg:rounded-none mt-5 lg:mt-0 mr-4 lg:mr-0 px-8 lg:pr-0 z-20 shadow-[0_8px_40px_0_rgba(0,0,0,0.35)] lg:shadow-none">
+              
+              <ul class="list-none p-0 block lg:flex justify-start items-center gap-4 text-light-02 pt-6 lg:pt-2 lg:ml-8">
+              
+                  
+                  <li class="border-t border-dark-gray-60 first:border-none lg:border-none max-lg:mt-1 py-2 max-lg:first:mt-0 max-lg:first:pt-0 max-lg:first:pb-1.5 lg:pt-0">
+                      <span class="nav-item no-underline lg:font-semibold pb-4 uppercase lg:normal-case text-[#A8ADBF] max-lg:text-dark-gray-50 text-[8px] lg:text-xs font-bold tracking-tighter lg:tracking-normal !cursor-text lg:!cursor-default" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-browser">
+                          Browser 
+                          
+  <div class="text-gray-700 hidden lg:inline-flex lg:pt-1 pointer-events-none pl-px lg:inline-block">
+    <svg
+      class="h-[6px] w-[6px] transition-transform duration-500"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="4.34 6.59 11.31 7.07"
+    >
+      <path
+        d="m9.293 12.95.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+      />
+    </svg>
+  </div>
+
+                      </span>
+                      
+                      <span class="dropdown-content lg:absolute lg:bg-white lg:border border-dark-02 block lg:rounded-xl lg:px-6 lg:py-4 lg:-ml-6 lg:mt-3 z-30 lg:shadow-[0_8px_40px_0_rgba(0,0,0,0.35)]" id="dropdown-browser">
+                          <ul class="list-none p-0 lg:flex gap-10">
+                              <li class="">
+                                      <span class="lg:uppercase lg:text-[#A8ADBF] lg:text-[8px] lg:font-bold lg:tracking-tighter pb-1 pt-2 lg:pt-1 leading-5 flex hidden lg:block">Downloads
+                                          
+                                      </span>
+                                  <ul class="list-none p-0 "><li><a href='download/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Desktop<i class="icon--download-right text-dark-primary-500 text-[8px]"></i></a>
+                                          
+                                      </li>
+                                      <li><a href='android/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Android<i class="icon--download-right text-dark-primary-500 text-[8px]"></i></a>
+                                          
+                                      </li>
+                                      <li><a href='ios/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">iOS<i class="icon--download-right text-dark-primary-500 text-[8px]"></i></a>
+                                          
+                                      </li>
+                                      
+                                  </ul>
+                              </li>
+                              <li class="">
+                                      <span class="lg:uppercase lg:text-[#A8ADBF] lg:text-[8px] lg:font-bold lg:tracking-tighter pb-1 pt-2 lg:pt-1 leading-5 flex font-semibold text-[#3f4855] leoButton isPlainFaint isTiny nav-dropdown relative w-full max-lg:!p-0 max-lg:!leading-6 items-center justify-between lg:!text-[8px] lg:!font-bold lg:tracking-tighter lg:pb-1 hover:!text-[#3f4855] lg:hover:!text-[#A8ADBF] lg:cursor-text lg:!leading-5 lg:!pl-0">Features
+                                          
+                                              
+  <div class="text-gray-700 lg:hidden pointer-events-none pl-px lg:inline-block">
+    <svg
+      class="h-[6px] w-[6px] transition-transform duration-500"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="4.34 6.59 11.31 7.07"
+    >
+      <path
+        d="m9.293 12.95.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+      />
+    </svg>
+  </div>
+
+                                          
+                                      </span>
+                                  <ul class="list-none p-0 lg:col-count-2 lg:columns-2 gap-x-0"><li><a href='shields/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Shields</a>
+                                          
+                                      </li>
+                                      <li><a href='firewall-vpn/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">VPN</a>
+                                          
+                                      </li>
+                                      <li><a href='leo/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Leo AI</a>
+                                          
+                                      </li>
+                                      <li><a href='wallet/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Wallet</a>
+                                          
+                                      </li>
+                                      <li><a href='brave-rewards/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Rewards</a>
+                                          
+                                      </li>
+                                      <li><a href='playlist/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Playlist</a>
+                                          
+                                      </li>
+                                      <li><a href='brave-news/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">News</a>
+                                          
+                                      </li>
+                                      <li><a href='talk/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Talk</a>
+                                          
+                                      </li>
+                                      <li><a href='privacy-features/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Advanced privacy</a>
+                                          
+                                      </li>
+                                      <li><a href='features/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">All features</a>
+                                          
+                                      </li>
+                                      
+                                  </ul>
+                              </li>
+                              
+                              
+                              
+                          </ul>
+                      </span>
+                  </li>
+              
+                  
+                  <li class="border-t border-dark-gray-60 first:border-none lg:border-none max-lg:mt-1 py-2 max-lg:first:mt-0 max-lg:first:pt-0 max-lg:first:pb-1.5 lg:pt-0">
+                      <span class="nav-item no-underline lg:font-semibold pb-4 uppercase lg:normal-case text-[#A8ADBF] max-lg:text-dark-gray-50 text-[8px] lg:text-xs font-bold tracking-tighter lg:tracking-normal !cursor-text lg:!cursor-default" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-bravesearch">
+                          Brave Search 
+                          
+  <div class="text-gray-700 hidden lg:inline-flex lg:pt-1 pointer-events-none pl-px lg:inline-block">
+    <svg
+      class="h-[6px] w-[6px] transition-transform duration-500"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="4.34 6.59 11.31 7.07"
+    >
+      <path
+        d="m9.293 12.95.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+      />
+    </svg>
+  </div>
+
+                      </span>
+                      
+                      <span class="dropdown-content lg:absolute lg:bg-white lg:border border-dark-02 block lg:rounded-xl lg:px-6 lg:py-4 lg:-ml-6 lg:mt-3 z-30 lg:shadow-[0_8px_40px_0_rgba(0,0,0,0.35)]" id="dropdown-bravesearch">
+                          <ul class="list-none p-0 ">
+                              <li class="">
+                                  <ul class="list-none p-0 "><li><a href='https://search.brave.com/'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger" target="_blank" rel="noreferrer noopener">Try Brave Search</a>
+                                          
+                                      </li>
+                                      <li><a href='search/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">About Brave Search</a>
+                                          
+                                      </li>
+                                      <li><a href='https://support.brave.com/hc/en-us/articles/4409406835469-What-is-the-Web-Discovery-Project-'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger" target="_blank" rel="noreferrer noopener">Web Discovery Project</a>
+                                          
+                                      </li>
+                                      
+                                  </ul>
+                              </li>
+                              
+                              
+                              
+                          </ul>
+                      </span>
+                  </li>
+              
+                  
+                  <li class="border-t border-dark-gray-60 first:border-none lg:border-none max-lg:mt-1 py-2 max-lg:first:mt-0 max-lg:first:pt-0 max-lg:first:pb-1.5 lg:pt-0">
+                      <span class="nav-item no-underline lg:font-semibold pb-4 uppercase lg:normal-case text-[#A8ADBF] max-lg:text-dark-gray-50 text-[8px] lg:text-xs font-bold tracking-tighter lg:tracking-normal !cursor-text lg:!cursor-default" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-whybrave">
+                          Why Brave 
+                          
+  <div class="text-gray-700 hidden lg:inline-flex lg:pt-1 pointer-events-none pl-px lg:inline-block">
+    <svg
+      class="h-[6px] w-[6px] transition-transform duration-500"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="4.34 6.59 11.31 7.07"
+    >
+      <path
+        d="m9.293 12.95.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+      />
+    </svg>
+  </div>
+
+                      </span>
+                      
+                      <span class="dropdown-content lg:absolute lg:bg-white lg:border border-dark-02 block lg:rounded-xl lg:px-6 lg:py-4 lg:-ml-6 lg:mt-3 z-30 lg:shadow-[0_8px_40px_0_rgba(0,0,0,0.35)]" id="dropdown-whybrave">
+                          <ul class="list-none p-0 lg:flex gap-10">
+                              <li class="">
+                                  <ul class="list-none p-0 "><li><a href='learn/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Browser &amp; search guides</a>
+                                          <p class="text-[10px] text-[#878DA6] tracking-tighter leading-3 font-semibold hidden lg:block">Privacy, extensions, and the best option for every platform.</p>
+                                      </li>
+                                      <li><a href='web3/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Web3 guides</a>
+                                          <p class="text-[10px] text-[#878DA6] tracking-tighter leading-3 font-semibold hidden lg:block">Crypto, NFTs, and all things blockchain. Learn the basics of Web3.</p>
+                                      </li>
+                                      <li><a href='glossary/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Privacy glossary</a>
+                                          <p class="text-[10px] text-[#878DA6] tracking-tighter leading-3 font-semibold hidden lg:block">Short, plain-language intros to common Internet and computer terms.</p>
+                                      </li>
+                                      <li><a href='compare/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Compare</a>
+                                          <p class="text-[10px] text-[#878DA6] tracking-tighter leading-3 font-semibold hidden lg:block">See how Brave stacks up against other browsers.</p>
+                                      </li>
+                                      <li><a href='ai/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">AI guides</a>
+                                          <p class="text-[10px] text-[#878DA6] tracking-tighter leading-3 font-semibold hidden lg:block">LLMs, machine learning, and the foundations of AI, for both users and devs.</p>
+                                      </li>
+                                      
+                                  </ul>
+                              </li>
+                              <li class="border-t border-[#C3C6D3] lg:border-0 mt-2 lg:mt-0">
+                                      <span class="lg:uppercase lg:text-[#A8ADBF] lg:text-[8px] lg:font-bold lg:tracking-tighter pb-1 pt-2 lg:pt-1 leading-5 flex uppercase text-[#A8ADBF] text-[8px] font-bold tracking-tighter">Blogs
+                                          
+                                      </span>
+                                  <ul class="list-none p-0 "><li><a href='blog/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Brave blog</a>
+                                          
+                                      </li>
+                                      <li><a href='privacy-updates/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Privacy updates</a>
+                                          
+                                      </li>
+                                      <li><a href='web-standards-at-brave/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Web standards</a>
+                                          
+                                      </li>
+                                      <li><a href='research/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Research</a>
+                                          
+                                      </li>
+                                      <li><a href='podcast/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Brave podcast</a>
+                                          
+                                      </li>
+                                      
+                                  </ul>
+                              </li>
+                              
+                              
+                              
+                          </ul>
+                      </span>
+                  </li>
+              
+                  
+                  <li class="border-t border-dark-gray-60 first:border-none lg:border-none max-lg:mt-1 py-2 max-lg:first:mt-0 max-lg:first:pt-0 max-lg:first:pb-1.5 lg:pt-0">
+                      <span class="nav-item no-underline lg:font-semibold pb-4 uppercase lg:normal-case text-[#A8ADBF] max-lg:text-dark-gray-50 text-[8px] lg:text-xs font-bold tracking-tighter lg:tracking-normal !cursor-text lg:!cursor-default" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-searchapi">
+                          Search API 
+                          
+  <div class="text-gray-700 hidden lg:inline-flex lg:pt-1 pointer-events-none pl-px lg:inline-block">
+    <svg
+      class="h-[6px] w-[6px] transition-transform duration-500"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="4.34 6.59 11.31 7.07"
+    >
+      <path
+        d="m9.293 12.95.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+      />
+    </svg>
+  </div>
+
+                      </span>
+                      
+                      <span class="dropdown-content lg:absolute lg:bg-white lg:border border-dark-02 block lg:rounded-xl lg:px-6 lg:py-4 lg:-ml-6 lg:mt-3 z-30 lg:shadow-[0_8px_40px_0_rgba(0,0,0,0.35)]" id="dropdown-searchapi">
+                          <ul class="list-none p-0 ">
+                              <li class="">
+                                  <ul class="list-none p-0 "><li><a href='search/api/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">About Brave Search API</a>
+                                          
+                                      </li>
+                                      <li><a href='https://api.search.brave.com/login'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger" target="_blank" rel="noreferrer noopener">Developer login</a>
+                                          
+                                      </li>
+                                      
+                                  </ul>
+                              </li>
+                              
+                              
+                              
+                          </ul>
+                      </span>
+                  </li>
+              
+                  
+                  <li class="border-t border-dark-gray-60 first:border-none lg:border-none max-lg:mt-1 py-2 max-lg:first:mt-0 max-lg:first:pt-0 max-lg:first:pb-1.5 lg:pt-0">
+                      <span class="nav-item no-underline lg:font-semibold pb-4 uppercase lg:normal-case text-[#A8ADBF] max-lg:text-dark-gray-50 text-[8px] lg:text-xs font-bold tracking-tighter lg:tracking-normal !cursor-text lg:!cursor-default" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-privateadvertising">
+                          Private advertising 
+                          
+  <div class="text-gray-700 hidden lg:inline-flex lg:pt-1 pointer-events-none pl-px lg:inline-block">
+    <svg
+      class="h-[6px] w-[6px] transition-transform duration-500"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="4.34 6.59 11.31 7.07"
+    >
+      <path
+        d="m9.293 12.95.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+      />
+    </svg>
+  </div>
+
+                      </span>
+                      
+                      <span class="dropdown-content lg:absolute lg:bg-white lg:border border-dark-02 block lg:rounded-xl lg:px-6 lg:py-4 lg:-ml-6 lg:mt-3 z-30 lg:shadow-[0_8px_40px_0_rgba(0,0,0,0.35)]" id="dropdown-privateadvertising">
+                          <ul class="list-none p-0  lg:flex gap-5">
+                              <li class="">
+                                  <ul class="list-none p-0 "><li><a href='brave-ads/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Overview</a>
+                                          
+                                      </li>
+                                      <li><a href='https://ads.brave.com/'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger" target="_blank" rel="noreferrer noopener">Ads Manager</a>
+                                          
+                                      </li>
+                                      <li><a href='brave-ads/audience/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Audience</a>
+                                          
+                                      </li>
+                                      <li><a href='brave-ads/casestudies/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Case studies</a>
+                                          
+                                      </li>
+                                      <li><a href='https://ads-help.brave.com/'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger" target="_blank" rel="noreferrer noopener">Help center</a>
+                                          
+                                      </li>
+                                      <li><a href='brave-ads/learn/index.html'  class="no-underline font-semibold text-light-01 hover:text-blurple-500" data-nav-control="trigger">Why private ads?</a>
+                                          
+                                      </li>
+                                      
+                                  </ul>
+                              </li>
+                              
+                              
+                              
+                              <div class="lg:border-l lg:-my-4 lg:pt-4 border-[#C3C6D3]">
+                                  
+                                  <span class="hidden lg:block pl-6 uppercase text-[8px] text-[#A8ADBF] font-bold tracking-tighter pb-1 pt-2 lg:pt-1">Brave ads formats</span>
+                                  <div class="hidden lg:block pl-6 table-of-contents">
+                                      <ul>
+                                      
+                                          <li class="[&>a]:no-underline [&>a]:font-semibold [&>a]:text-light-01 [&>a]:text-[12px] [&>a]:hover:text-blurple-500 li-before"><a href='brave-ads/ad-formats/index.html#search-ads'>Search ads</a></li>
+                                      
+                                          <li class="[&>a]:no-underline [&>a]:font-semibold [&>a]:text-light-01 [&>a]:text-[12px] [&>a]:hover:text-blurple-500 li-before"><a href='brave-ads/ad-formats/index.html#new-tab-takeovers'>New tab takeovers</a></li>
+                                      
+                                          <li class="[&>a]:no-underline [&>a]:font-semibold [&>a]:text-light-01 [&>a]:text-[12px] [&>a]:hover:text-blurple-500 li-before"><a href='brave-ads/ad-formats/index.html#newsfeed-ads'>Newsfeed ads</a></li>
+                                      
+                                          <li class="[&>a]:no-underline [&>a]:font-semibold [&>a]:text-light-01 [&>a]:text-[12px] [&>a]:hover:text-blurple-500 li-before"><a href='brave-ads/ad-formats/index.html#notification-ads'>Notification ads</a></li>
+                                      
+                                      </ul>
+                                  </div>
+                                  <div class="hidden lg:block border-t border-[#C3C6D3] -mr-6 mt-4 py-[0.7rem] text-center">
+                                      <a href='brave-ads/resources/index.html' class="no-underline font-semibold text-light-01 hover:text-blurple-500">More ads resources</a>
+                                  </div>
+                              </div>
+                              
+                          </ul>
+                      </span>
+                  </li>
+              
+              </ul>
+              <div class="flex justify-end flex-grow gap-3 flex-wrap lg:flex-no-wrap pt-3 pb-6 lg:p-0 lg:mr-6 button-block lg:w-min"><a id="top-nav-download-button-desktop"  data-show-platform="false" class="download  btn btn--none btn--orange btn h-9 btn--white font-semibold normal-case py-2 max-w-full w-full lg:w-fit leading-none [--icon-size:1.3em] invisible opacity-0 transition-opacity duration-500" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">Download Brave<span class="icon [--icon-url:url('leo-icons/download.svg')] bg-[var(--icon-color,currentColor)] ml-1"></span></a>
+                  <a class="btn btn--clear font-semibold capitalize max-w-full w-full lg:w-fit leading-none" href="https://search.brave.com/" id="top-nav-try-search-button">Try Brave Search</a>
+              </div>
+          </nav>
+      </div>
+      
+  </header>
+</div>
+
+
+    <main class="site-main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="hero home-hero-alt gradient--purple-blurple relative overflow-hidden xl:px-0 pb-96">
+    <div class="container text-center z-10 relative">
+
+        <h1 class="leading-tight mt-16 pt-0 mx-auto text-4xl xs:text-5xl xl:text-6xl font-semibold pb-3">
+        
+            The browser that puts you first
+        
+    </h1>
+        <div class="sm:w-9/12 mx-auto leading-snug">
+            
+                <p class="text-2xl">Block ads. Save data. And get way faster websites.</p>
+                <p class="italic">Just by switching your browser.</p>
+            
+            <div class="android-only">
+                <a data-track-event data-event-category="Research" data-event-action="Download Button" data-event-name="Hero Download Button"  class="download inline-block my-8 mx-auto invisible opacity-0" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">
+        <img
+      
+        class="h-[48px]"
+      
+      src="static-assets/images/playstore.en.png"
+      alt="Google Play Store button"/>
+    </a>
+            </div>
+            <div class="ios-only">
+                <a data-track-event data-event-category="Research" data-event-action="Download Button" data-event-name="Hero Download Button"  class="download inline-block my-8 mx-auto invisible opacity-0" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">
+        <img
+      
+        class="h-[48px]"
+      
+      src="static-assets/images/app-store-badge.en.png"
+      alt="Apple App Store button"/>
+    </a>
+            </div>
+            <a id="home-download-button-hero"  data-show-platform="false" class="download icon--download btn btn--large btn--hero block my-8 mx-auto py-5 sm:px-32 font-medium not-ios not-android invisible opacity-0 transition-opacity duration-500" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">Download Brave</a>
+        </div>
+    </div>
+    <picture>
+        <source media="(min-width: 768px)" srcset="/static-assets/images/optimized/desktop-hero-screenshot@1x.webp 1x,
+        /static-assets/images/optimized/desktop-hero-screenshot@2x.webp 2x,
+        /static-assets/images/optimized/desktop-hero-screenshot@3x.webp 3x" sizes="100vw" type="image/webp">
+        <source media="(min-width: 768px)" srcset="/static-assets/images/optimized/desktop-hero-screenshot@1x.png,
+        /static-assets/images/optimized/desktop-hero-screenshot@2x.png 2x,
+        /static-assets/images/optimized/desktop-hero-screenshot@3x.png 3x" sizes="100vw" type="image/png">
+        <source srcset="/static-assets/images/optimized/mobile-hero-screenshot@1x.webp 1x,
+        /static-assets/images/optimized/mobile-hero-screenshot@2x.webp 2x,
+        /static-assets/images/optimized/mobile-hero-screenshot@3x.webp 3x" sizes="100vw" type="image/webp">
+        <img class="br--not-ie absolute pt-5 max-w-333 md:max-w-6.5xl w-11/12 -translate-x-1/2 transform left-1/2" srcset="/static-assets/images/optimized/desktop-hero-screenshot@1x.png 1x,
+        /static-assets/images/optimized/desktop-hero-screenshot@2x.png 2x,
+        /static-assets/images/optimized/desktop-hero-screenshot@3x.png 3x" sizes="100vw" src="static-assets/images/optimized/desktop-hero-screenshot%402x.png" alt="Brave Browser Screenshot">
+    </picture>
+    <svg xmlns="http://www.w3.org/2000/svg" class="br--not-ie absolute bottom-0 left-0 w-full origin-center transform scale-110" fill="none" viewBox="0 0 2262 263"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.3596C0 33.3596 870 157.138 1318 131.5C1766 105.862 2262 0 2262 0V263H0L0 33.3596Z" fill="white"></path></svg>
+</section>
+
+<div class="section container 2xl:px-0 md:px-10 sm:px-0 py-10">
+    <section class="grid md:grid-cols-2 my-16">
+        <div class="flex flex-wrap mr-10 items-center">
+            <div class="lg:px-12">
+                <h3 class="text-light-01 text-ds-h3 md:text-ds-h2 md:leading-tight mb-5 font-semibold pb-0">Stay safer online</h3>
+                <p class="lg:text-lg xs:text-lg md:text-base leading-normal  text-light-02 max-w-md mx-auto mt-0 sm:mx-0">By default, Brave blocks trackers &amp; ads on the websites you visit, keeping you more private online.</p>
+            </div>
+        </div>
+        <div id="vid-533695950" class="video-embed relative overflow-hidden box rounded-none p-0 br--not-chrome">
+    <div class="h-0" style="padding-bottom: 56.2%;">
+        <iframe class="absolute top-0 left-0 w-full h-full border-0" data-src="https://player.vimeo.com/video/533695950?dnt=1&portrait=0&title=0&byline=0" title="Brave - The Privacy Browser" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+        <noscript>
+            <div class="absolute left-0 top-0 h-full w-full flex justify-center items-center">
+                <p class="text-xl">This is a Vimeo video. You'll need JavaScript enabled to view this.</p>
+            </div>
+        </noscript>
+        
+        <div class="video-overlay absolute left-0 top-0 h-full w-full bg-center bg-no-repeat bg-cover cursor-pointer" style="background-image: url(static-assets/images/optimized/privacy-browser-video-cover.jpg);">
+            <a class="group play-video text-white no-underline text-8xl flex justify-center items-center transition-colors ease-in-out duration-300 absolute w-full h-full hover:bg-black/50" title="Play Brave - The Privacy Browser video" aria-label="Play Brave - The Privacy Browser video" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 128 128" fill="none" class="transition-filter duration-150 ease-linear group-hover:invert w-[20%] max-w-[128px]"><rect width="126" height="126" x="1" y="1" fill="#09090C" stroke="#F5F5F7" stroke-width="2" rx="15"/><path fill="#fff" fill-rule="evenodd" d="M64 99c-19.3 0-35-15.7-35-35s15.7-35 35-35 35 15.7 35 35-15.7 35-35 35Zm0-64.167c-16.083 0-29.167 13.084-29.167 29.167 0 16.082 13.084 29.167 29.167 29.167 16.082 0 29.167-13.085 29.167-29.167 0-16.083-13.085-29.167-29.167-29.167Zm-7.191 45.799 23.46-15.803a1 1 0 0 0 0-1.658l-23.46-15.803a1 1 0 0 0-1.559.83v31.604a1 1 0 0 0 1.559.83Z" clip-rule="evenodd"/></svg>
+            </a>
+        </div>
+        
+        
+    </div>
+</div><div id="vid-462733432" class="video-embed relative overflow-hidden box rounded-none p-0 br--chrome">
+    <div class="h-0" style="padding-bottom: 56.2%;">
+        <iframe class="absolute top-0 left-0 w-full h-full border-0" data-src="https://player.vimeo.com/video/462733432?dnt=1&portrait=0&title=0&byline=0" title="Speed Past Chrome" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+        <noscript>
+            <div class="absolute left-0 top-0 h-full w-full flex justify-center items-center">
+                <p class="text-xl">This is a Vimeo video. You'll need JavaScript enabled to view this.</p>
+            </div>
+        </noscript>
+        
+        <div class="video-overlay absolute left-0 top-0 h-full w-full bg-center bg-no-repeat bg-cover cursor-pointer" style="background-image: url(static-assets/images/optimized/speed-past-chrome-cover.png);">
+            <a class="group play-video text-white no-underline text-8xl flex justify-center items-center transition-colors ease-in-out duration-300 absolute w-full h-full hover:bg-black/50" title="Play Speed Past Chrome video" aria-label="Play Speed Past Chrome video" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 128 128" fill="none" class="transition-filter duration-150 ease-linear group-hover:invert w-[20%] max-w-[128px]"><rect width="126" height="126" x="1" y="1" fill="#09090C" stroke="#F5F5F7" stroke-width="2" rx="15"/><path fill="#fff" fill-rule="evenodd" d="M64 99c-19.3 0-35-15.7-35-35s15.7-35 35-35 35 15.7 35 35-15.7 35-35 35Zm0-64.167c-16.083 0-29.167 13.084-29.167 29.167 0 16.082 13.084 29.167 29.167 29.167 16.082 0 29.167-13.085 29.167-29.167 0-16.083-13.085-29.167-29.167-29.167Zm-7.191 45.799 23.46-15.803a1 1 0 0 0 0-1.658l-23.46-15.803a1 1 0 0 0-1.559.83v31.604a1 1 0 0 0 1.559.83Z" clip-rule="evenodd"/></svg>
+            </a>
+        </div>
+        
+        
+    </div>
+</div></section>
+
+    <section class="grid md:grid-cols-2 my-16 gap-5">
+        <div class="flex order-2 flex-wrap items-center">
+            <div class="lg:px-12 pt-10 mx-auto">
+                <h3 class="text-light-01 text-ds-h3 md:text-ds-h2 md:leading-tight mb-5 font-semibold pb-0">Online privacy made simple</h3>
+                <p class="lg:text-lg xs:text-lg md:text-base leading-normal text-light-02 max-w-md mx-auto mt-0 sm:mx-0">All the good of ad-blocking, incognito windows, private search, even VPN. All in a single download.</p>
+            </div>
+        </div>
+        <picture class="max-w-sm w-full my-auto mx-auto max-w-maxcontent">
+      <source srcset="/static-assets/images/optimized/home-illustration-01.webp" type="image/webp" />
+      <img
+        src="static-assets/images/optimized/home-illustration-01.png"
+        alt="Online Privacy Illustration"
+        class="w-full"/>
+    </picture>
+    </section>
+
+    <section class="grid md:grid-cols-2 my-16 gap-5">
+        <div class="flex order-2 md:order-first flex-wrap items-center">
+            <div class="lg:px-12 pt-10 mx-auto">
+                <h3 class="text-light-01 text-ds-h3 md:text-ds-h2 md:leading-tight mb-5 font-semibold pb-0">Switch in 60 seconds</h3>
+                <p class="lg:text-lg xs:text-lg md:text-base leading-normal text-light-02 max-w-md mx-auto mt-0 sm:mx-0">Quickly import bookmarks, extensions, even saved passwords. It’s the best of your old browser, only safer. And it only takes a minute to switch.</p>
+            </div>
+        </div>
+        <picture class="max-w-sm w-full my-auto mx-auto max-w-maxcontent">
+      <source srcset="/static-assets/images/optimized/home-illustration-02.webp" type="image/webp" />
+      <img
+        src="static-assets/images/optimized/home-illustration-02.png"
+        alt="Switch to Private Browsing Illustration"
+        class="w-full"/>
+    </picture>
+    </section>
+
+    <section class="grid md:grid-cols-2 my-16 gap-5">
+        <div class="flex order-2 flex-wrap items-center">
+            <div class="lg:px-12 pt-10 mx-auto">
+                <h3 class="text-light-01 text-ds-h3 md:text-ds-h2 md:leading-tight mb-5 font-semibold pb-0">The new super app</h3>
+                <p class="lg:text-lg xs:text-lg md:text-base leading-normal text-light-02 max-w-md mx-auto mt-0 sm:mx-0">Brave brings <a href="search/index.html">truly independent search</a>, <a href="talk/index.html">free video calls</a>, <a href="playlist/index.html">offline playlists</a>, even a <a href="brave-news/index.html">customizable news feed</a>. All private. All right to your browser super app.</p>
+            </div>
+        </div>
+        <picture class="max-w-sm w-full my-auto mx-auto max-w-maxcontent">
+      <source srcset="/static-assets/images/optimized/home-illustration-03.webp" type="image/webp" />
+      <img
+        src="static-assets/images/optimized/home-illustration-03.png"
+        alt="Private Browser App Illustration"
+        class="w-full"/>
+    </picture>
+    </section>
+
+    <section class="grid md:grid-cols-2 my-16 gap-5">
+        <div class="flex order-2 md:order-first flex-wrap items-center">
+            <div class="lg:px-12 pt-10 mx-auto">
+                <h3 class="text-light-01 text-ds-h3 md:text-ds-h2 md:leading-tight mb-5 font-semibold pb-0">Privacy you can see</h3>
+                <p class="lg:text-lg xs:text-lg md:text-base leading-normal text-light-02 max-w-md mx-auto mt-0 sm:mx-0">Blocking ads &amp; trackers means less stuff (visible or hidden) on the sites you visit. And that means faster page load, better battery life, even mobile data savings.</p>
+            </div>
+        </div>
+        <picture class="max-w-sm w-full my-auto mx-auto max-w-maxcontent">
+      <source srcset="/static-assets/images/optimized/home-illustration-04.webp" type="image/webp" />
+      <img
+        src="static-assets/images/optimized/home-illustration-04.png"
+        alt="Fastest Browser Illustration"
+        class="w-full"/>
+    </picture>
+    </section>
+
+    
+
+    <section id="comparison" class="section container text-center">
+        <h2 class="pb-8 text-left font-semibold text-interactive-04 leading-snug text-2.5xl sm:text-ds-h2">Online privacy by default: Brave vs. other browsers</h2>
+        <ul class="list-none flex-wrap flex p-0 mb-10">
+            <li class="flex mb-2 mr-5">
+                <div class="chart__cell">
+                    <svg class="chart__icon">
+                        <use href="#checked" />
+                    </svg>
+                </div>
+                <div class="text-left whitespace-nowrap font-semibold ml-2">Strong protection</div>
+            </li>
+            <li class="flex mb-2 mr-5">
+                <div class="chart__cell">
+                    <svg class="chart__icon">
+                        <use href="#crossed" />
+                    </svg>
+                </div>
+                <div class="text-left whitespace-nowrap font-semibold ml-2">No protection</div>
+            </li>
+            <li class="flex mb-2 mr-5">
+                <div class="chart__cell">
+                    <svg class="chart__icon">
+                        <use href="#limited" />
+                    </svg>
+                </div>
+                <div class="text-left whitespace-nowrap font-semibold ml-2">Limited protection</div>
+            </li>
+        </ul>
+        
+<svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;position:absolute;">
+    <symbol id="checked" viewBox="0 0 37 37" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4314 36.7838C28.4986 36.7838 36.6597 28.6395 36.6597 18.5931C36.6597 8.5466 28.4986 0.402344 18.4314 0.402344C8.3642 0.402344 0.203125 8.5466 0.203125 18.5931C0.203125 28.6395 8.3642 36.7838 18.4314 36.7838Z" fill="#12A378"/>
+        <path d="M11.7715 18.9428L15.978 22.4411L25.0921 13.3457" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="crossed" viewBox="0 0 37 37" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4861 36.7838C28.5532 36.7838 36.7143 28.6395 36.7143 18.5931C36.7143 8.5466 28.5532 0.402344 18.4861 0.402344C8.41887 0.402344 0.257812 8.5466 0.257812 18.5931C0.257812 28.6395 8.41887 36.7838 18.4861 36.7838Z" fill="#EA3A0D"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M 13.3062 25.4118 C 12.9 25.818 12.2415 25.818 11.8354 25.4118 C 11.4292 25.0057 11.4292 24.3472 11.8354 23.941 L 17.2174 18.559 L 11.9646 13.3062 C 11.5585 12.9 11.5585 12.2415 11.9646 11.8354 C 12.3708 11.4292 13.0292 11.4292 13.4354 11.8354 L 18.6882 17.0882 L 23.941 11.8354 C 24.3472 11.4292 25.0057 11.4292 25.4118 11.8354 C 25.818 12.2415 25.818 12.9 25.4118 13.3062 L 20.159 18.559 L 25.541 23.941 C 25.9472 24.3472 25.9472 25.0057 25.541 25.4118 C 25.1349 25.818 24.4764 25.818 24.0703 25.4118 L 18.6882 20.0298 L 13.3062 25.4118 Z"  stroke="white" fill="white" />
+    </symbol>
+
+    <symbol id="limited" viewBox="0 0 37 37" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4314 36.7838C28.4986 36.7838 36.6597 28.6395 36.6597 18.5931C36.6597 8.5466 28.4986 0.402344 18.4314 0.402344C8.3642 0.402344 0.203125 8.5466 0.203125 18.5931C0.203125 28.6395 8.3642 36.7838 18.4314 36.7838Z" fill="#F5C518"/>
+        <path d="M 28.7 17 H 10.3 C 9.6 17 9 17.6 9 18.3 C 9 19 9.6 19.6 10.3 19.6 H 28.8 C 29.4 19.5 30 19 30 18.3 C 30 17.6 29.4 17 28.7 17 Z" stoke="white" stroke-width="3" fill="white"/>
+    </symbol>
+</svg>
+
+
+        <div class="chart">
+            <div class="chart__row chart__header">
+                <p class="chart__heading">Built-in features</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell chart__browser-name">
+                        <img src="static-assets/images/brave-logo-sans-text.svg" alt="Brave logo">
+                        <span>Brave</span>
+                    </div>
+                    <div class="chart__cell chart__browser-name">
+                        <img  src="static-assets/images/chrome-logo.svg" alt="Google Chrome logo">
+                        <span>Chrome</span>
+                    </div>
+
+                    <div class="chart__cell chart__browser-name">
+                        <img src="static-assets/images/duckduckgo-logo.svg" alt="DuckDuckGo logo">
+                        <span>DDG</span>
+                    </div>
+                    <div class="chart__cell chart__browser-name">
+                        <img src="static-assets/images/edge-logo.svg" alt="Edge logo">
+                        <span>Edge</span>
+                    </div>
+                    <div class="chart__cell chart__browser-name">
+                        <img src="static-assets/images/firefox-logo.svg" alt="Firefox logo">
+                        <span>Firefox</span>
+                    </div>
+                    <div class="chart__cell chart__browser-name">
+                        <img src="static-assets/images/safari-logo.svg" alt="Safari logo">
+                        <span>Safari</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart__row">
+                <p class="chart__heading">Invasive ads blocked</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart__row">
+                <p class="chart__heading">Cross-site trackers blocked</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart__row">
+                <p class="chart__heading">Third-party cookie tracking blocked</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart__row">
+                <p class="chart__heading">Fingerprinting blocked (cookie-less trackers)</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart__row">
+                <p class="chart__heading">Malware &amp; phishing protection*</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart__row">
+                <p class="chart__heading">Protections against bounce tracking</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart__row">
+                <p class="chart__heading">Anonymized network routing (Tor mode)</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="chart__row">
+                <p class="chart__heading">Assert opt-out privacy rights (<a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener">GPC</a>)</p>
+                <div class="chart__cell-group">
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#checked" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#limited" />
+                        </svg>
+                    </div>
+                    <div class="chart__cell">
+                        <svg class="chart__icon">
+                            <use href="#crossed" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="pt-4 text-sm italic text-center">
+            * Google safe browsing &#43; malware &amp; phishing protection from crowd-sourced lists. Table describes default desktop browser configurations.
+        </p>
+
+    </section>
+    
+    <section>
+        <header class="text-center">
+            <h1 class="leading-tight mt-4 pt-0 mx-auto text-4xl xs:text-4.5xl lg:text-5.5xl font-semibold pb-6">Advanced features</h1>
+            <p class="text-xl sm:text-1.5xl lg:text-2xl leading-normal">
+                Only here for the privacy? We got you. Just
+                <a id="home-download-advanced-plank"  data-show-platform="false" class="download  btn btn--medium btn--orange btn--inline invisible opacity-0 transition-opacity duration-500" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">download</a>
+                and enjoy…
+                <br />
+            Want a more bespoke experience? Brave’s got great customizations, too:</p>
+        </header>
+        <ul class="grid sm:grid-cols-3 list-none gap-10 px-0 mt-5">
+            <li>
+                <picture class=" max-w-maxcontent">
+      <source srcset="/static-assets/images/optimized/security-illustration.webp" type="image/webp" />
+      <img
+        src="static-assets/images/optimized/security-illustration.jpg"
+        alt="Secure Browsing Illustration"
+        class="rounded-lg card p-0"/>
+    </picture>
+                <h2 class="font-semibold text-xl lg:text-2xl py-3">Advanced security</h2>
+                <p class="lg:text-lg xs:text-lg md:text-base leading-normal">Built-in IPFS integration, onion routing with Tor, custom filter lists, and <a href="privacy-features/index.html">more security features</a>.</p>
+            </li>
+            <li>
+                <picture class=" max-w-maxcontent">
+      <source srcset="/static-assets/images/optimized/rewards-illustration.webp" type="image/webp" />
+      <img
+        src="static-assets/images/optimized/rewards-illustration.jpg"
+        alt="Brave Rewards Illustration"
+        class="rounded-lg card p-0"/>
+    </picture>
+                <h2 class="font-semibold text-xl lg:text-2xl py-3">Brave Rewards</h2>
+                <p class="lg:text-lg xs:text-lg md:text-base leading-normal"><a href="brave-rewards/index.html">Earn crypto tokens for your attention</a> by opting in to privacy-preserving, first-party ads.</p>
+            </li>
+            <li>
+                <picture class=" max-w-maxcontent">
+      <source srcset="/static-assets/images/optimized/wallet-illustration.webp" type="image/webp" />
+      <img
+        src="static-assets/images/optimized/wallet-illustration.jpg"
+        alt="Crypto Wallet Illustration"
+        class="rounded-lg card p-0"/>
+    </picture>
+                <h2 class="font-semibold text-xl lg:text-2xl py-3">Crypto wallet</h2>
+                <p class="lg:text-lg xs:text-lg md:text-base leading-normal"><a href="wallet/index.html">A secure, browser-native wallet</a> to buy, store, send, and swap your crypto assets.</p>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<section class="section gradient--blurple-pink-with-embellishments relative overflow-hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="br--not-ie absolute -top-1 left-0 -rotate-180 origin-center transform scale-110 w-full" fill="none" viewBox="0 0 2262 263"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.3596C0 33.3596 870 157.138 1318 131.5C1766 105.862 2262 0 2262 0V263H0L0 33.3596Z" fill="white"></path></svg>
+    <div class="container z-10 relative xl:mt-24 2xl:mt-40">
+        <section class="text-center">
+            <h1 class="leading-tight mt-16 pt-0 mx-auto sm:text-4xl xs:text-3.5xl text-2.5xl font-semibold pb-3">Join the more than 50 million people (and counting) who trust Brave for a faster, safer Web</h1>
+            <p class="xl:text-3xl sm:text-2xl text-xl">Import bookmarks and extensions from your old browser in one click.</p>
+            <a id="home-download-button-lower"  data-show-platform="false" class="download icon--download btn btn--large btn--orange btn--ghost block my-8 mx-auto py-5 sm:px-32 font-medium invisible opacity-0 transition-opacity duration-500" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">Download Brave</a>
+        </section><ul class="accordion--alt accordion-faq faq pt-16 lg:mx-24">
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">Is the Brave Browser safe?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    <p>Brave is one of the <a href="learn/most-secure-browser/index.html">safest browsers</a> on the market today. It blocks privacy-invasive ads &amp; trackers. It blocks third-party data storage. It protects from browser fingerprinting. It upgrades every webpage possible to secure https connections. And it does all this by default.</p>
+<p>It&rsquo;s also built off the open-source Chromium Web core, which powers browsers used by billions of people worldwide. This source code is arguably vetted by more security researchers than any other browser. In short, not only is Brave safe to use, it&rsquo;s much safer than almost any other browser. <a href="privacy-features/index.html">Learn more</a>.</p>
+
+                </div>
+            </li>
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">How do I download &amp; install Brave?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    Brave is available on nearly all desktop computers (Windows, macOS, Linux) and nearly every mobile device (Android and iOS). To get started, simply download the Brave browser <a href="download/index.html">for desktop</a>, <a href="https://play.google.com/store/apps/details?id=com.brave.browser&amp;hl=en" target="_blank" rel="noopener">for Android</a>, or <a href="https://apps.apple.com/us/app/brave-private-web-browser-vpn/id1052879175?mt=8&amp;ign-mpt=uo%3D4" target="_blank" rel="noopener">for iOS</a>.
+                </div>
+            </li>
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">Does Brave have a VPN?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    Yes! <a href="firewall-vpn/index.html">Brave Firewall + VPN</a> protects everything you do online, on your entire device, <em>even outside the Brave Browser</em>. One subscription covers up to 5 devices, across Android, iOS, and desktop.
+                </div>
+            </li>
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">What languages is Brave available in?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    The Brave Browser is available in nearly 160 languages in all, including four different dialects of Chinese. Brave Search is currently available in English, French, German, Japanese, and Spanish, with support for many more languages coming soon.
+                </div>
+            </li>
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">Who owns Brave?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    The Brave Browser, Brave Search, and all their various features are made by Brave Software Inc, an independent, privately-held company. Brave is not beholden to any other tech company, and works every single day to fight Big Tech&rsquo;s terrible privacy abuses. Brave exists to help real people, not some faceless tech company.
+                </div>
+            </li>
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">Is Brave open source?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    Yes. The Brave Browser is built on the open-source Chromium Web core and our own client code is released under the <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank" rel="noopener">Mozilla Public License 2.0</a>.
+                </div>
+            </li>
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">How does Brave compare to Chrome?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    Simply put, the <a href="compare/chrome/performance/index.html">Brave Browser is 3x faster than Google Chrome</a>. By blocking privacy-invading ads &amp; trackers by default, there&rsquo;s less stuff to load on every single webpage you visit. That means pages load much faster, saving you time, money, and battery life. It also means you&rsquo;re much safer online. <a href="compare/chrome/performance/index.html">Learn more</a>.
+                </div>
+            </li>
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">Is Brave free?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    <p>Yes, Brave is completely free to use. Simply download the Brave browser <a href="download/index.html">for desktop</a>, <a href="https://play.google.com/store/apps/details?id=com.brave.browser&amp;hl=en" target="_blank" rel="noopener">for Android</a>, or <a href="https://apps.apple.com/us/app/brave-private-web-browser-vpn/id1052879175?mt=8&amp;ign-mpt=uo%3D4" target="_blank" rel="noopener">for iOS</a> to get started. You can also use Brave Search free from any browser at search.brave.com, or <a href="https://search.brave.com/default" target="_blank" rel="noopener">set it as your default search engine</a>.</p>
+<p>Brave also has some great, subscription-based features, including <a href="talk/index.html">Brave Talk Premium</a> and <a href="firewall-vpn/index.html">Brave Firewall + VPN</a>.</p>
+
+                </div>
+            </li>
+            
+            <li class="faq__item accordion__item -open">
+                <h3 class="faq__item-heading accordion__item-heading">
+                    <button class="text-white">What is BAT, and how do I earn it?</button>
+                </h3>
+                <div class="faq__item-content accordion__item-content py-0 text-white">
+                    <p>BAT is short for Basic Attention Token. BAT is a crypto asset, and a key (but totally optional) part of the Brave Rewards ecosystem. Here&rsquo;s how it works:</p>
+<p>Brave Rewards gives you the option to view first-party, privacy-protecting ads while you browse (these ads are from the Brave Private Ads network). If you choose to view them, you earn BAT, via <a href="brave-rewards/index.html">the Brave Rewards program</a>.</p>
+<p>You can keep BAT like any other crypto asset, or use it to tip the content publishers you love. Brave even gives you a secure way to store BAT (and any other crypto asset), with <a href="wallet/index.html">Brave Wallet</a>. And, again, Brave Rewards is a totally optional program.</p>
+<p>Other tech companies steal your data to sell ads&mdash;to them, <em>you</em> are the product. Brave is different. We think your attention is valuable (and private!), and that you should get a fair share of the revenue for any advertising you choose to view. That fair share is rewarded in BAT.</p>
+
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+
+</main>
+<div id="persistent-cta" class="transition transform duration-150 gradient--dark-purple-purple text-center sticky bottom-0 w-full 1.5xl:hidden br--not-brave br--not-safari opacity-0 translate-y-20 -mb-1 z-30">
+    <div class="android-only">
+      <a data-track-event data-event-category="Research" data-event-action="Persistent Download Button" data-event-name="Persistent Download Button"  class="download py-4 flex justify-center invisible opacity-0" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">
+        <img
+      
+        class="h-[48px]"
+      
+      src="static-assets/images/playstore.en.png"
+      alt="Google Play Store button"/>
+    </a>
+  </div>
+  <div class="ios-only">
+      <a data-track-event data-event-category="Research" data-event-action="Persistent Download Button" data-event-name="Persistent Download Button"  class="download py-4 flex justify-center invisible opacity-0" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">
+        <img
+      
+        class="h-[48px]"
+      
+      src="static-assets/images/app-store-badge.en.png"
+      alt="Apple App Store button"/>
+    </a>
+  </div>
+    <a data-track-event data-event-category="Research" data-event-action="Persistent Download Button" data-event-name="Persistent Download Button"  data-show-platform="false" class="download  btn btn--none btn--clear icon--download font-semibold text-white no-underline text-xl leading-4 block pt-6 pb-8 border-none mx-auto w-full max-w-full rounded-none not-ios not-android invisible opacity-0 transition-opacity duration-500" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">Download Brave</a>
+</div>
+
+    <footer class="site-footer section pb-12" data-theme="dark">
+    <div class="site-footer__container container">
+        <div class="site-footer__column">
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Resources</h4>
+                <ul>
+                    <li><a href="https://support.brave.com/hc/en-us">Help center</a></li>
+                    <li><a href="https://community.brave.com/" target="_blank" rel="noopener noreferrer">Community</a></li>
+                    <li><a href="whats-new/index.html">What&#39;s new in Brave?</a></li>
+                    <li><a href="latest/index.html">Release notes</a></li>
+                    <li><a href="https://status.brave.com/" target="_blank" rel="noopener noreferrer">Status</a></li>
+                    <li><a href='faq/index.html'>FAQs</a></li>
+                    <li><a href='transparency/index.html'>Transparency report</a></li>
+                    <li><a href="https://store.brave.com/">Merch store</a></li>
+                </ul>
+            </div>
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Privacy policy</h4>
+                <ul>
+                    <li><a href='privacy/browser/index.html'>Brave Browser</a></li>
+                    <li><a href='privacy/website/index.html'>Website &amp; email</a></li>
+                    <li><a href='privacy/publishers-creators/index.html'>Publishers &amp; creators</a></li>
+                    <li><a href='privacy/advertiser/index.html'>Advertisers</a></li>
+                    <li><a href='privacy/ccpa/index.html'>CCPA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__column">
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Browser</h4>
+                <ul>
+                    <li><a href='download/index.html'>Desktop</a></li>
+                    <li><a href='android/index.html'>Android</a></li>
+                    <li><a href='ios/index.html'>iOS</a></li>
+                    <li><a href='linux/index.html'>Linux</a></li>
+                    <li><a href='download-beta/index.html'>Beta</a></li>
+                    <li><a href='download-nightly/index.html'>Nightly</a></li>
+                </ul>
+            </div>
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Company</h4>
+                <ul>
+                    <li><a href='about/index.html'>About</a></li>
+                    <li><a href='blog/index.html'>Blog</a></li>
+                    <li><a href='brave-branding-assets/index.html'>Brand assets</a></li>
+                    <li><a href='careers/index.html'>Careers</a></li>
+                    <li><a href='events/index.html'>Events</a></li>
+                    <li><a href="https://github.com/brave/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href='research/index.html'>Research</a></li>
+                    <li><a href='reviews/index.html'>Reviews</a></li>
+                    <li><a href='https://support.brave.com/hc/en-us/articles/4537609459469'>Tor Onion address</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__column">
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Social media</h4>
+                <ul>
+                    <li><a href="https://www.reddit.com/r/brave_browser" target="_blank" rel="noopener noreferrer">Reddit</a></li>
+                    <li><a href="https://twitter.com/brave" target="_blank" rel="noopener noreferrer">X (formerly Twitter)</a></li>
+                    <li><a href="https://mastodon.social/@brave" target="_blank" rel="me noopener noreferrer">Mastodon</a></li>
+                    <li><a href="https://www.facebook.com/BraveSoftware/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/bravesoftware" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Products</h4>
+                <ul>
+                    <li><a href='search/index.html'>Search</a></li>
+                    <li><a href='brave-rewards/index.html'>Rewards</a></li>
+                    <li><a href='wallet/index.html'>Wallet</a></li>
+                    <li><a href='firewall-vpn/index.html'>Firewall &#43; VPN</a></li>
+                    <li><a href='talk/index.html'>Talk</a></li>
+                    <li><a href='brave-news/index.html'>News</a></li>
+                    <li><a href='playlist/index.html'>Playlist</a></li>
+                    <li><a href='features/index.html'>All features</a></li>
+                    <li><a href="https://basicattentiontoken.org/" target="_blank" rel="noopener noreferrer">Basic Attention Token</a></li>
+                    <li><a href='youtube-ad-blocker/index.html'>YouTube ad blocker</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__column">
+            <div class="site-footer__grouping pb-8">
+                <h4 class="site-footer__heading">Contact</h4>
+                <h5 class="site-footer__sub-heading">Support</h5>
+                <a href="https://community.brave.com/" target="_blank" rel="noopener noreferrer">community.brave.com</a>
+                <h5 class="site-footer__sub-heading">Advertising</h5>
+                <a target="_blank" class="brave-tooltip-parent" href="mailto:adsales@brave.com" rel="noopener noreferrer">adsales@brave.com <span class="brave-tooltip">Please only use this email address if you are interested in purchasing advertising with Brave. For support, please visit community.brave.com.</span></a>
+                <h5 class="site-footer__sub-heading">Business</h5>
+                <a href="mailto:bizdev@brave.com">bizdev@brave.com</a>
+                <h5 class="site-footer__sub-heading">Press</h5>
+                <a href="mailto:press@brave.com">press@brave.com</a>
+            </div>
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Developer docs</h4>
+                <ul>
+                    <li><a href="https://wallet-docs.brave.com/" target="_blank" rel="noopener noreferrer">Wallet docs</a></li>
+                </ul>
+            </div>
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Creators</h4>
+                <ul>
+                    <li><a href="https://creators.brave.com/" target="_blank" rel="noopener noreferrer">Overview</a></li>
+                    <li><a href='media-assets/index.html' rel="noopener noreferrer">Creators media kit</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__column">
+            <div class="site-footer__grouping">
+                <h4 class="site-footer__heading">Offices</h4>
+                <h5 class="site-footer__sub-heading">Brave San Francisco</h5>
+                <p>580 Howard St. Unit 402,<br> San Francisco, CA 94105</p>
+            </div>
+            <div class="site-footer__grouping">
+                <label for="language-switcher">Choose a language</label>
+<div class="inline-block relative w-full">
+    <select name="language-switcher" id="language-switcher" class="block appearance-none w-full bg-gray-900 border border-gray-700 hover:border-gray-800 bg-container-highlight border-gray-20 hover:border-gray-30 px-4 py-2 pr-8 rounded rounded-m leading-tight focus:outline-none focus:ring">
+        
+            
+            <option selected value="en">English</option>
+            
+        
+            
+            <option  value="en-in">English (India)</option>
+            
+        
+            
+            <option  value="ja">日本語</option>
+            
+        
+            
+            <option  value="zh">中文 (中国)</option>
+            
+        
+            
+            <option  value="ko">한국어</option>
+            
+        
+            
+            <option  value="de">Deutsch</option>
+            
+        
+            
+            <option  value="fr">Français</option>
+            
+        
+            
+            <option  value="es">Español</option>
+            
+        
+            
+            <option  value="it">Italiano</option>
+            
+        
+            
+            <option  value="pt-br">Português</option>
+            
+        
+            
+            <option  value="fil">Filipino</option>
+            
+        
+            
+            <option  value="hi">हिन्दी</option>
+            
+        
+            
+            <option  value="id">bahasa Indonesia</option>
+            
+        
+            
+            <option  value="nl">Nederlands</option>
+            
+        
+            
+            <option  value="pl">Polski</option>
+            
+        
+            
+            <option  value="ru">Русский</option>
+            
+        
+            
+            <option  value="vi">Tiếng Việt</option>
+            
+        
+            
+            <option  value="ca">Català</option>
+            
+        
+            
+            <option  value="ro">Română</option>
+            
+        
+    </select>
+    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 text-[currentColor]">
+        <svg class="fill-current fill-[currentColor] h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="w-full flex flex-wrap justify-center sm:justify-between pt-12 mt-6 border-t border-neutral-800 border-gray-20">
+            <img src="static-assets/images/brave-logo.svg" alt="Brave Software home" class="w-24 mb-4 sm:mb-0" />
+            <div class="w-full sm:w-auto text-center sm:text-right">
+                <a title="Terms of Use" href='terms-of-use/index.html'>Terms of use</a> | <a title="Report a Security Issue" href="https://hackerone.com/brave" target="_blank" rel="noopener noreferrer">Report a security issue</a>
+                <small class="block">© 2015 - 2024 Brave Software, Inc. | All rights reserved</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+<div id="interstitial" class="br--not-ie desktop-only perfundo__overlay transition-opacity duration-300 opacity-0 br--not-linux">
+    <section class="gradient--dark-purple-purple py-3 2xl:py-12 overflow-y-auto h-full fixed w-full z-1001 ">
+        <div class="js-perfundo-close mt-6">
+            <div class="absolute left-0 ml-16">
+                <a href="#" class="w-24" aria-label="close modal"><img src="static-assets/icons/close-icon.svg" alt="close" class="filter brightness-0 invert" /></a>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="br--safari mt-20 lg:mt-0"></div>
+            <h2 class="font-semibold text-center text-ds-h1 text-white pt-0 2xl:pt-5 pb-2 2xl:pb-5 list-none mt-16 sm:mt-0">Almost there…</h2>
+            <h5 class="text-center text-ds-h5 text-white pb-2 2xl:pb-5">You’re just 60 seconds away from the best privacy online</h5>
+            <p class="text-center text-white">
+                If your download didn’t start automatically,
+                <span class="whitespace-nowrap"><a  data-show-platform="false" class="download  btn btn--medium btn--orange text-white btn--inline invisible opacity-0 transition-opacity duration-500" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">click here</a>.</span>
+            </p>
+            <ol class="instructions p-0 grid md:grid-cols-3 list-none gap-10 mt-8 2xl:mt-12 leading-normal">
+                
+                <li class="bg-white rounded-lg p-10 sm:px-3 lg:px-10 mb-2 2xl:mb-5 relative">
+                    <h3 class="text-ds-h3 text-interactive-04 font-semibold mt-3 pb-3 break-words">Download Brave</h3>
+                    
+                        <p class="text-light-01 br--chrome br--safari">Click “Save” in the window that pops up, and wait for the download to complete.</p>
+                        <p class="text-light-01 br--not-chrome br--not-safari">Wait for the download to complete (you may need to click “Save” in a window that pops up).</p>
+                    
+                </li>
+                
+                <li class="bg-white rounded-lg p-10 sm:px-3 lg:px-10 mb-2 2xl:mb-5 relative">
+                    <h3 class="text-ds-h3 text-interactive-04 font-semibold mt-3 pb-3 break-words">Run the installer</h3>
+                    
+                        <div class="br--windows">
+                            <p class="text-light-01 br--safari br--chrome">Click the downloaded file at the top right of your screen, and follow the instructions to install Brave.</p>
+                            <p class="text-light-01 br--not-chrome br--not-safari">Click the downloaded file, and follow the instructions to install Brave.</p>
+                        </div>
+                        <div class="br--not-windows">
+                            <p class="text-light-01 br--chrome">Click the downloaded file at the bottom left of your screen, and follow the instructions to install Brave.</p>
+                            <p class="text-light-01 br--safari">Click the downloaded file at the top right of your screen, and follow the instructions to install Brave.</p>
+                            <p class="text-light-01 br--not-chrome br--not-safari">Click the downloaded file, and follow the instructions to install Brave.</p>
+                        </div>
+                    
+                </li>
+                
+                <li class="bg-white rounded-lg p-10 sm:px-3 lg:px-10 mb-2 2xl:mb-5 relative">
+                    <h3 class="text-ds-h3 text-interactive-04 font-semibold mt-3 pb-3 break-words">Import settings</h3>
+                    
+                        <p class="text-light-01">During setup, import bookmarks, extensions, &amp; passwords from your old browser.</p>
+                    
+                </li>
+                
+            </ol>
+
+            <p class="need-help text-white pl-16 pb-5 pt-2"><a href="https://support.brave.com/hc/en-us/articles/360025390311-How-do-I-download-and-install-Brave-" target="_blank" rel="noopener">Need help?</a></p>
+            <div class="mobile-banner">
+                
+<div class="interstitial-card text-white border-4 rounded-lg p-5 2xl:p-8 flex max-w-content 2xl:mt-8">
+    <div>
+        <h3 class="text-ds-h3 font-semibold">Get better privacy. Everywhere!</h3>
+        <p>Download Brave mobile for privacy on the go.</p>
+        <div class="flex gap-5 items-center flex-wrap">
+            <a  class="download  invisible opacity-0" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">
+        <img
+      
+        class="h-[48px]"
+      
+      src="static-assets/images/app-store-badge.en.png"
+      alt="Apple App Store button"/>
+    </a>
+            <a  class="download  invisible opacity-0" data-build-channel="release" data-allows-dynamic-ref-code="true" href="https://laptop-updates.brave.com/download/BRV002">
+        <img
+      
+        class="h-[48px]"
+      
+      src="static-assets/images/playstore.en.png"
+      alt="Google Play Store button"/>
+    </a>
+        </div>
+    </div>
+    <img class="max-w-maxcontent h-32 md:h-40 ml-10" src="static-assets/images/interstitial-download-qr.png" alt="Download QR code" />
+</div>
+
+            </div>
+        </div>
+    
+        <div class="br--windows">
+            <div class="br--chrome br--edge">
+    <div class="arrow-prompt w-fit block text-center absolute right-0 2xl:right-[30rem] top-0 mt-5 2xl:flex">
+        <span class="block 2xl:text-right mt-2 bounce 2xl:slide 2xl:order-2 2xl:flex-1">
+            <img src="static-assets/icons/arrow-down.svg" alt="" class="mx-auto inline-block transform rotate-180 2xl:-rotate-90 "/>
+        </span>
+        <span class="text-white font-semibold block w-64 2xl:order-1 2xl:flex-1 2xl:whitespace-nowrap 2xl:mr-12 2xl:mt-2">Click this file to install Brave</span>
+        <img src="static-assets/images/brave-logo-no-shadow.png" alt="Brave logo" class="mx-auto w-20 2xl:hidden" />
+    </div>
+</div>
+            <div class="br--not-chrome br--not-edge">
+    <div class="arrow-prompt w-fit block text-center absolute top-0 right-0 mt-5">
+        <span class="block mt-2 bounce">
+            <img src="static-assets/icons/arrow-down.svg" alt="" class="mx-auto transform rotate-180"/>
+        </span>
+        <span class="text-white font-semibold block w-64">Click this file to install Brave</span>
+        <img src="static-assets/images/brave-logo-no-shadow.png" alt="Brave logo" class="mx-auto w-20" />
+    </div>
+</div>
+        </div>
+        <div class="br--not-windows">
+            
+    <div class="arrow-prompt w-fit block text-center absolute top-0 right-0 mt-5">
+        <span class="block mt-2 bounce">
+            <img src="static-assets/icons/arrow-down.svg" alt="" class="mx-auto transform rotate-180"/>
+        </span>
+        <span class="text-white font-semibold block w-64">Click this file to install Brave</span>
+        <img src="static-assets/images/brave-logo-no-shadow.png" alt="Brave logo" class="mx-auto w-20" />
+    </div>
+
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="static-assets/js/announcement-banner.js"></script>
+
+    <script src="static-assets/vendors/lodash.custom.min.js" defer></script>
+            
+            <script src="ab-test.js" defer></script>
+        
+            
+            <script src="js/1-ie-compat.js" defer></script>
+        
+            
+            <script src="js/3-delay-animations.js" defer></script>
+        
+            
+            <script src="js/5-set-download-urls.js" defer></script>
+        
+            
+            <script src="js/accordion-alt.js" defer></script>
+        
+            
+            <script src="js/accordion-faq.js" defer></script>
+        
+            
+            <script src="js/dev.js" defer></script>
+        
+            
+            <script src="js/eggs.js" defer></script>
+        
+            
+            <script src="js/interstitial.js" defer></script>
+        
+            
+            <script src="js/navigation.js" defer></script>
+        
+            
+            <script src="js/perfundo.js" defer></script>
+        
+            
+            <script src="js/persistent-cta.js" defer></script>
+        
+            
+            <script src="js/vimeo.js" defer></script>
+        
+    
+    <span class="hidden">12345</span>
 </body>
+
+<!-- Mirrored from brave.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Feb 2024 16:29:48 GMT -->
 </html>
