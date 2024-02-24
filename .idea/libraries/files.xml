@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="files">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/static-assets/files/Brave-Logo-Package.zip!/" />
+      <root url="jar://$PROJECT_DIR$/static-assets/files/PublisherMediaAssets.zip!/" />
+      <root url="jar://$PROJECT_DIR$/static-assets/files/BrandBraveBAT.zip!/" />
+      <root url="jar://$PROJECT_DIR$/static-assets/files/BrandBrave.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
