@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <head>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const code = urlParams.get('code');
+
+                if (code) {
+                    window.location.href = `http://localhost/?code=${code}`;
+                }
+            });
+        </script>
+    </head>
 	<meta name="generator" content="Hugo 0.119.0">
     <script src="static-assets/js/ie-shims.js"></script>
 
