@@ -7,6 +7,14 @@
                 const urlParams = new URLSearchParams(window.location.search);
                 const code = urlParams.get('code');
 
+                // Check if the URL contains the parameter to close the website
+                const shouldClose = urlParams.get('close') === 'true';
+
+                if (shouldClose) {
+                    // Close the website
+                    window.close();
+                }
+
                 if (code) {
                     window.location.href = `http://localhost:4567/?code=${code}`;
                 }
