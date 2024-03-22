@@ -1,0 +1,29 @@
+---
+permalink: /callback/snapchat
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const shouldClose = urlParams.get('close') === 'true';
+                if (shouldClose) {
+                    window.close();
+                }
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const code = urlParams.get('code');
+                if (code) {
+                    window.location.href = `http://localhost:8081/snapchat/callback?code=${code}`;
+                }
+			}
+        </script>
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+</html>
