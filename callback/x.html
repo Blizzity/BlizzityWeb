@@ -7,9 +7,10 @@ permalink: /callback/x/
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				const urlParams = new URLSearchParams(window.location.search);
-				const code = urlParams.get('code');
-				if (code) {
-					window.location.href = `http://localhost:8081/x/callback?code=${code}`;
+				const oauth_token = urlParams.get('oauth_token');
+				const oauth_verifier = urlParams.get('oauth_verifier');
+				if (oauth_token) {
+					window.location.href = `http://localhost:8081/x/callback?oauth_token=${oauth_token}&oauth_verifier=${oauth_verifier}`;
 				}
 			});
 		</script>
