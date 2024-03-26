@@ -1,0 +1,23 @@
+---
+permalink: /callback/x/
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				const urlParams = new URLSearchParams(window.location.search);
+				const code = urlParams.get('code');
+				if (code) {
+					window.location.href = `http://localhost:8081/x/callback?code=${code}`;
+				}
+			});
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Callback</title>
+	</head>
+	<body>
+		Don't close this!
+	</body>
+</html>
